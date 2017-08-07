@@ -1,0 +1,718 @@
+/*
+
+Vivado v2015.3 (64-bit)
+SW Build 1368829 on Mon Sep 28 20:06:39 MDT 2015
+Process ID: 4815
+
+Current time: 	8/6/17 3:19:30 AM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: NAME="Ubuntu"
+Version: 4.4.0-89-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	/opt/Xilinx/Vivado/2015.3/tps/lnx64/jre
+
+User name: 	iq
+User home directory: /home/iq
+User working directory: /media/iq/New Volume/Projets_work/marketinternational_filter/HLS_IPs/Pakcet_Loopback
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: /home/iq/.Xilinx/Vivado/2015.3/vivado.ini
+Vivado layouts directory: /home/iq/.Xilinx/Vivado/2015.3/layouts
+
+GUI allocated memory:	133 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,887 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 37 MB (+36368kb) [00:00:05]
+// [Engine Memory]: 4,887 MB (+4972485kb) [00:00:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,892 MB. GUI used memory: 21 MB. Current time: 8/6/17 3:19:32 AM EDT
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // l:JideButton (JPanel:JComponent, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 17 seconds
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a:JButton (JPanel:JComponent, JDialog:Dialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a:JButton (JPanel:JComponent, JDialog:Dialog)
+selectButton(RDIResource.HJFileChooserHelpers_REFRESH_FOLDER_VIEW_TO_REFLECT_EXTERNAL, (String) null); // a:JButton (JPanel:JComponent, JDialog:Dialog)
+setFileChooser("/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.xpr");
+// Opening Vivado Project: /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.xpr. Version: Vivado v2015.3 
+// bF:g (cq:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// [GUI Memory]: 42 MB (+3564kb) [00:03:25]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,983 MB. GUI used memory: 21 MB. Current time: 8/6/17 3:22:52 AM EDT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 MB (+17316kb) [00:03:30]
+// [GUI Memory]: 74 MB (+10012kb) [00:03:31]
+// Tcl Message: open_project {/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Projets_work/CROWD_S/PYNQ/HW/Vivado_SPI_Interfacing/project_3' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.3/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 5,135 MB (+4199kb) [00:03:33]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_3; location: /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3; part: xc7z020clg400-1
+// 'i' command handler elapsed time: 43 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 5983.418 ; gain = 226.059 ; free physical = 262 ; free virtual = 2052 
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bF:g (cq:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - vcc Adding component instance block -- xilinx.com:ip:selectio_wiz:5.1 - selectio_wiz_0 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,198 MB. GUI used memory: 35 MB. Current time: 8/6/17 3:23:32 AM EDT
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: The HP banks in device are  && local var set to 0 && devicetype is 3 The HP banks in device are  && local var set to 0 && devicetype is 3 The HP banks in device are  && local var set to 0 && devicetype is 3 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0 Adding component instance block -- xilinx.com:ip:ila:6.0 - ila_1 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:ila:6.0 - ila_2 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <design_1> from BD file </media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// [Engine Memory]: 5,394 MB (+1897kb) [00:04:15]
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 6255.156 ; gain = 271.738 ; free physical = 157 ; free virtual = 1790 
+// 'bg' command handler elapsed time: 12 seconds
+// Elapsed time: 13 seconds
+dismissDialog("Open Block Design"); // bF:g (cq:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK1] [get_bd_nets vcc_dout] [get_bd_intf_nets processing_system7_0_axi_periph_M01_AXI] [get_bd_cells axi_quad_spi_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets axi_quad_spi_0_io0_o] [get_bd_nets io0_i_1] [get_bd_nets axi_quad_spi_0_ss_o] [get_bd_nets axi_quad_spi_0_sck_o] [get_bd_cells ila_1] 
+// [GUI Memory]: 77 MB (+180kb) [00:04:48]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets diff_clk_in_1] [get_bd_nets data_in_from_pins_n_1] [get_bd_nets rst_processing_system7_0_50M_peripheral_reset] [get_bd_nets selectio_wiz_0_data_in_to_device] [get_bd_nets RXD_P_1] [get_bd_cells selectio_wiz_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets selectio_wiz_0_clk_out] [get_bd_cells ila_2] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets c_counter_binary_0_Q] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells c_counter_binary_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells vcc] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports io0_i] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_ports RX_clk_in] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports RXD_P] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports RXD_N] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports ss_o] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports Q] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports io0_o] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports sck_o] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// T:bF (cq:JFrame):  Re-customize IP : addNotify
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// cn:x (t:g): Configuration Presets: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,435 MB. GUI used memory: 51 MB. Current time: 8/6/17 3:24:53 AM EDT
+// Elapsed time: 72 seconds
+dismissDialog("Re-customize IP"); // T:bF (cq:JFrame)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_PRESETS, "Presets"); // y:JideButton (CommandBar:DockableBar, t:g)
+// [GUI Memory]: 113 MB (+32697kb) [00:05:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,466 MB. GUI used memory: 63 MB. Current time: 8/6/17 3:25:13 AM EDT
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "USB 0 ; MIO 28 .. 39 ;  ;  ;  ;  ;  ; ", 4, "USB 0", 0, true); // aX:cw (JViewport:JComponent, t:g) - Node
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "ENET 0 ; MIO 16 .. 27 ;  ;  ;  ;  ;  ; ", 2, "MIO 16 .. 27", 1, true); // aX:cw (JViewport:JComponent, t:g) - Node
+selectComboBox("PCW ENET0 ENET0 IO (PCW_ENET0_ENET0_IO)", "EMIO", 0); // x:f (aX:cw, t:g)
+// Elapsed time: 16 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_ENET0_ENET0_IO {EMIO} CONFIG.PCW_USB0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Elapsed time: 12 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd>  
+// bF:g (cq:JFrame):  Save Design : addNotify
+dismissDialog("Save Design"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Elapsed time: 23 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Elapsed time: 40 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "eth"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Tri Mode Ethernet MAC", 7, "Tri Mode Ethernet MAC", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Tri Mode Ethernet MAC", 7); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Tri Mode Ethernet MAC", 7, "Tri Mode Ethernet MAC", 0, false, false, false, false, false, true); // T:aw (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// bF:g (cq:JFrame):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:tri_mode_ethernet_mac:9.0 tri_mode_ethernet_mac_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // i:l (JPanel:JComponent, cq:JFrame)
+// t:x (cq:JFrame): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (1 out of 3 selected), tri_mode_ethernet_mac_0, gmii]", 2, false, true, ui.utils.TriState.True); // H:a (JViewport:JComponent, t:x)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (1 out of 3 selected), tri_mode_ethernet_mac_0, s_axi]", 4, false, false, ui.utils.TriState.False); // H:a (JViewport:JComponent, t:x)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 3 selected), tri_mode_ethernet_mac_0, mdio_external]", 3, false, true, ui.utils.TriState.True); // H:a (JViewport:JComponent, t:x)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (3 out of 3 selected), tri_mode_ethernet_mac_0, s_axi]", 4, false, true, ui.utils.TriState.True); // H:a (JViewport:JComponent, t:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:x)
+dismissDialog("Run Connection Automation"); // t:x (cq:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins tri_mode_ethernet_mac_0/gmii] 
+// Tcl Message: INFO: [board_rule:/tri_mode_ethernet_mac_0-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gmii_rtl:1.0 gmii_rtl INFO: [board_rule:/tri_mode_ethernet_mac_0-100] connect_bd_intf_net /gmii_rtl /tri_mode_ethernet_mac_0/gmii 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board  [get_bd_intf_pins tri_mode_ethernet_mac_0/mdio_external] 
+// Tcl Message: INFO: [board_rule:/tri_mode_ethernet_mac_0-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:mdio_io:1.0 mdio_io INFO: [board_rule:/tri_mode_ethernet_mac_0-100] connect_bd_intf_net /mdio_io /tri_mode_ethernet_mac_0/mdio_external 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins tri_mode_ethernet_mac_0/s_axi] 
+// Tcl Message: </tri_mode_ethernet_mac_0/s_axi/Reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]> 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// Elapsed time: 89 seconds
+selectRadioButton((HResource) null, "1000 Mbps"); // cC:a
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Shared Logic", 1); // cH:g (H:JPanel, t:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Features", 2); // cH:g (H:JPanel, t:g)
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.MAC_Speed {1000_Mbps}] [get_bd_cells tri_mode_ethernet_mac_0] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets tri_mode_ethernet_mac_0_gmii] [get_bd_intf_nets processing_system7_0_axi_periph_M00_AXI] [get_bd_intf_nets tri_mode_ethernet_mac_0_mdio_external] [get_bd_cells tri_mode_ethernet_mac_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_ports gmii_rtl] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_ports mdio_io] 
+// Elapsed time: 84 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 353, 515, 780, 751, false, false, false, true, false); // eC:aO (TdiGroup:JideTabbedPane, cq:JFrame) - Popup Trigger
+// Elapsed time: 27 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "gpio"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0); // T:aw (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI GPIO", 0, "AXI GPIO", 0, false, false, false, false, false, true); // T:aw (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // i:l (JPanel:JComponent, cq:JFrame)
+// t:x (cq:JFrame): Run Connection Automation: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (0 out of 2 selected), axi_gpio_0]", 1, true, false, ui.utils.TriState.False); // H:a (JViewport:JComponent, t:x) - Node
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected), axi_gpio_0]", 1, true, true, ui.utils.TriState.True); // H:a (JViewport:JComponent, t:x) - Node
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (1 out of 2 selected), axi_gpio_0, GPIO]", 2, false, true, ui.utils.TriState.False); // H:a (JViewport:JComponent, t:x)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:x)
+dismissDialog("Run Connection Automation"); // t:x (cq:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI] 
+// Tcl Message: </axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41200000 [ 64K ]> 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// T:bF (cq:JFrame):  Re-customize IP : addNotify
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// cn:x (t:g): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // T:bF (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,488 MB. GUI used memory: 77 MB. Current time: 8/6/17 3:31:32 AM EDT
+// Elapsed time: 33 seconds
+selectButton("MIO Configuration", "MIO Configuration"); // l:JideButton (cj:ButtonPanel, t:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aX:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "ENET 0 ; EMIO ;  ;  ;  ;  ;  ; ", 2); // aX:cw (JViewport:JComponent, t:g)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "MDIO ; EMIO ;  ;  ;  ;  ;  ; ", 3, "EMIO", 1, false); // aX:cw (JViewport:JComponent, t:g)
+selectComboBox("PCW ENET0 GRP MDIO IO (PCW_ENET0_GRP_MDIO_IO)", "MIO 52 .. 53", 1); // x:f (aX:cw, t:g)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "ENET 0 ; EMIO ;  ;  ;  ;  ;  ; ", 2, "EMIO", 1, true); // aX:cw (JViewport:JComponent, t:g) - Node
+selectComboBox("PCW ENET0 ENET0 IO (PCW_ENET0_ENET0_IO)", "MIO 16 .. 27", 1); // x:f (aX:cw, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_ENET0_ENET0_IO {MIO 16 .. 27} CONFIG.PCW_ENET0_GRP_MDIO_IO {MIO 52 .. 53}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // i:l (JPanel:JComponent, cq:JFrame)
+// t:x (cq:JFrame): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (0 out of 1 selected), axi_gpio_0, GPIO]", 2, false, true, ui.utils.TriState.False); // H:a (JViewport:JComponent, t:x)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, t:x)
+dismissDialog("Run Connection Automation"); // t:x (cq:JFrame)
+selectTab((HResource) null, (HResource) null, "Design", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aB:x (cq:JFrame): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a:JButton (JPanel:JComponent, aB:x)
+// bF:g (cq:JFrame):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_target all [get_files  {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects  [get_files  {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -sync -no_script -force -quiet 
+dismissDialog("Managing Output Products"); // bF:g (cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aB:x (cq:JFrame): Generate Output Products: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "8", 7); // f:JComboBox (ap:JPanel, aB:x)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_APPLY_OPTIONS_AND_DISMISS_DIALOG_WITHOUT, "Apply"); // a:JButton (JPanel:JComponent, aB:x)
+// [GUI Memory]: 119 MB (+304kb) [00:14:11]
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aB:x)
+// bF:g (cq:JFrame):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v Wrote  : </media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_processing_system7_0_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_processing_system7_0_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_processing_system7_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_xbar_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_xbar_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 6377.688 ; gain = 12.613 ; free physical = 118 ; free virtual = 1625 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -force -quiet 
+// Tcl Message: export_simulation -of_objects [get_files {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -directory {/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.ip_user_files/sim_scripts} -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// 'aT' command handler elapsed time: 42 seconds
+// Elapsed time: 30 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// T:bF (cq:JFrame):  Re-customize IP : addNotify
+// t:g (cq:JFrame): Re-customize IP: addNotify
+// cn:x (t:g): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // T:bF (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 96 MB. Current time: 8/6/17 3:34:12 AM EDT
+selectButton("DDR Configuration", "DDR Configuration"); // l:JideButton (cj:ButtonPanel, t:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Enable Advanced options ; 0 ;  Enable Advanced DDR QoS settings", 4); // P:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, " Training/Board Details ; User Input ; ", 2); // P:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Memory Part Configuration ; Memory Part Configuration ; Memory Part Configuration", 1); // P:cw (JViewport:JComponent, t:g)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Memory Part Configuration ; Memory Part Configuration ; Memory Part Configuration", 1); // P:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DRAM Training ; DRAM Training ; DRAM Training", 3); // P:cw (JViewport:JComponent, t:g)
+collapseTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DRAM Training ; DRAM Training ; DRAM Training", 3); // P:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "DQS to Clock Delay (ns) ; DQS to Clock Delay (ns) ; DQS to Clock Delay (ns)", 4); // P:cw (JViewport:JComponent, t:g)
+expandTreeTable(PAResourceAtoD.DDRConfigTreeTablePanel_DDR_CONFIG_TREE_TABLE, "Board Delay (ns) ; Board Delay (ns) ; Board Delay (ns)", 9); // P:cw (JViewport:JComponent, t:g)
+// [GUI Memory]: 127 MB (+2688kb) [00:15:08]
+// Elapsed time: 205 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, t:g)
+dismissDialog("Re-customize IP"); // t:g (cq:JFrame)
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:aY (cq:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // G:aY (cq:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Sun Aug  6 03:38:05 2017] Launched synth_1... Run output will be captured here: /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.runs/synth_1/runme.log [Sun Aug  6 03:38:05 2017] Launched impl_1... Run output will be captured here: /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.runs/impl_1/runme.log 
+// bF:g (cq:JFrame):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bF:g (cq:JFrame)
+// [GUI Memory]: 134 MB (+237kb) [00:19:09]
+// [GUI Memory]: 141 MB (+792kb) [00:38:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 93 MB. Current time: 8/6/17 4:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 86 MB. Current time: 8/6/17 4:34:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 86 MB. Current time: 8/6/17 5:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 5:34:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 6:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 6:34:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 7:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 7:34:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 8:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 8:34:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 9:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 9:34:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 85 MB. Current time: 8/6/17 10:04:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 86 MB. Current time: 8/6/17 10:34:12 AM EDT
+// Elapsed time: 26204 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cq:JFrame)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true); // y:k (I:JPanel, cq:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a:x (cq:JFrame): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:x)
+dismissDialog("Create HDL Wrapper"); // a:x (cq:JFrame)
+// Tcl Message: make_wrapper -files [get_files {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -top 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE, "Reset Output Products..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RESET_COMPOSITE_FILE
+// aB:x (cq:JFrame): Reset Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS, "Reset"); // a:JButton (JPanel:JComponent, aB:x)
+// bF:g (cq:JFrame):  Managing Output Products : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_target all [get_files  {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_ip_user_files -of_objects  [get_files  {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -sync -no_script -force -quiet 
+dismissDialog("Managing Output Products"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i - design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // y:k (I:JPanel, cq:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa:JMenu (al:JPopupMenu, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aB:x (cq:JFrame): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, aB:x)
+// bF:g (cq:JFrame):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] 
+// Tcl Message: INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: Verilog Output written to : /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.v Verilog Output written to : /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_processing_system7_0_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_processing_system7_0_0'... 
+// Elapsed time: 13 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bF:g)
+// 'aT' command handler elapsed time: 15 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_processing_system7_0_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'design_1_processing_system7_0_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_processing_system7_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'design_1_xbar_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'design_1_xbar_0'... INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar . INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'design_1_axi_gpio_0_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'design_1_axi_gpio_0_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/hdl/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 6421.586 ; gain = 0.000 ; free physical = 168 ; free virtual = 1545 
+// Tcl Message: export_ip_user_files -of_objects [get_files {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -force -quiet 
+// Tcl Message: export_simulation -of_objects [get_files {{/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.srcs/sources_1/bd/design_1/design_1.bd}}] -directory {/media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.ip_user_files/sim_scripts} -force -quiet 
+// Elapsed time: 14 seconds
+dismissDialog("Managing Output Products"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectButton(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Sun Aug  6 10:55:45 2017] Launched synth_1... Run output will be captured here: /media/iq/New Volume/Projets_work/marketinternational_filter/HW_Vivado/PYNQ_Ethernet/Vivado_basedesign_Eth_loopback/project_3/project_3.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,512 MB. GUI used memory: 84 MB. Current time: 8/6/17 11:04:13 AM EDT
+// Elapsed time: 1128 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 189, 458); // dy:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 151 seconds
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (r:JPanel, cq:JFrame)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bF:g (cq:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ae:JMenuItem (JPopupMenu:JComponent, cq:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// G:aY (cq:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Close Project : addNotify
+dismissDialog("Close Project"); // G:aY (cq:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,514 MB. GUI used memory: 74 MB. Current time: 8/6/17 11:17:19 AM EDT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bF:g (cq:JFrame)

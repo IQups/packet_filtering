@@ -1,0 +1,124 @@
+/*
+
+Vivado v2015.3 (64-bit)
+SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+Process ID: 748
+
+Current time: 	8/6/17 9:36:56 PM PKT
+Time zone: 	Pakistan Time (Asia/Karachi)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.3/tps/win64/jre
+
+User name: 	iq
+User home directory: C:/Users/iq
+User working directory: I:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+Vivado preferences path: C:/Users/iq/AppData/Roaming/Xilinx/Vivado/2015.3/vivado.ini
+Vivado layouts directory: C:/Users/iq/AppData/Roaming/Xilinx/Vivado/2015.3/layouts
+
+GUI allocated memory:	161 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 370 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 33 MB (+32312kb) [00:00:23]
+// [Engine Memory]: 339 MB (+204163kb) [00:00:23]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: I:\Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design\HW\project\project.xpr. Version: Vivado v2015.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project I:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 370 MB. GUI used memory: 24 MB. Current time: 8/6/17 9:36:58 PM PKT
+// [Engine Memory]: 370 MB (+14963kb) [00:00:28]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 404 MB (+15680kb) [00:00:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 428 MB. GUI used memory: 24 MB. Current time: 8/6/17 9:37:28 PM PKT
+// [Engine Memory]: 428 MB (+3733kb) [00:00:58]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 43 MB (+8926kb) [00:01:03]
+// [GUI Memory]: 49 MB (+3295kb) [00:01:05]
+// [Engine Memory]: 462 MB (+13664kb) [00:01:05]
+// [GUI Memory]: 51 MB (+15kb) [00:01:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project I:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.3/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 487 MB (+1966kb) [00:01:10]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 55 MB (+1260kb) [00:01:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project; location: I:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 724.246 ; gain = 128.574 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 65 MB (+7251kb) [00:01:20]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 507 MB. GUI used memory: 33 MB. Current time: 8/6/17 9:40:38 PM PKT
+// Elapsed time: 170 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "run_synthesis"); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 519 MB (+7709kb) [00:04:16]
+// Tcl Message: [Sun Aug 06 21:40:46 2017] Launched synth_1... Run output will be captured here: I:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 728.391 ; gain = 0.000 
+// 'm' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 533 MB. GUI used memory: 34 MB. Current time: 8/6/17 9:40:58 PM PKT
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 546 MB (+1015kb) [00:10:36]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// W:G (cq:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 397 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, W:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, W:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Aug 06 21:47:31 2017] Launched impl_1... Run output will be captured here: I:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 40 MB. Current time: 8/6/17 9:47:34 PM PKT
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 69 MB (+1160kb) [00:12:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 587 MB. GUI used memory: 40 MB. Current time: 8/6/17 9:49:29 PM PKT
+// [Engine Memory]: 587 MB (+14721kb) [00:13:02]

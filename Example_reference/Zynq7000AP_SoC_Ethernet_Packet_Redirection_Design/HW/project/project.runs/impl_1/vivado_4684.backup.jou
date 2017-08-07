@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1245834 on Tue Jun  2 00:14:11 MDT 2015
+# IP Build 1245439 on Mon Jun  1 15:42:43 MDT 2015
+# Start of session at: Thu Jul 02 17:19:45 2015
+# Process ID: 17332
+# Log file: C:/Work/projects/packet_inspection_techtip_update/project/project.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Work/projects/packet_inspection_techtip_update/project/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

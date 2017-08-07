@@ -1,0 +1,3 @@
+09:28:49 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:29:07 INFO  : XSDB server has started successfully.
+09:29:11 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.

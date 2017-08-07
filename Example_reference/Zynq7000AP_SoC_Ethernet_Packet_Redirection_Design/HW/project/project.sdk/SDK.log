@@ -1,0 +1,101 @@
+15:08:56 INFO  : Launching XSDB server: xsdb.bat -s C:/Xilinx1/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:09:07 INFO  : Processing command line option -hwspec C:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper.hdf.
+15:09:29 ERROR : Timed out. 30 seconds have elapsed while waiting for XSDB server to launch.
+15:55:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A" && level==0} -index 1' command is executed.
+15:55:52 INFO  : FPGA configured successfully with bitstream "C:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:57:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A" && level==0} -index 1' command is executed.
+15:57:01 INFO  : 'fpga -state' command is executed.
+15:57:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:01 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0' command is executed.
+15:57:05 INFO  : Mermory regions for PS have been updated.
+15:57:05 INFO  : Sourcing of 'C:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:57:06 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0' command is executed.
+15:57:07 INFO  : 'ps7_init' command is executed.
+15:57:07 INFO  : 'ps7_post_config' command is executed.
+15:57:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:57:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:09 INFO  : The application 'C:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/packet_redirect/Debug/packet_redirect.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:57:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0
+memmap -addr 1073741824 -size 65536 -flags 3
+memmap -addr 2147483648 -size 65536 -flags 3
+memmap -addr 4160782336 -size 4096 -flags 3
+memmap -addr 4160786432 -size 4096 -flags 3
+memmap -addr 4160790528 -size 4096 -flags 3
+memmap -addr 4160794624 -size 4096 -flags 3
+memmap -addr 3758129152 -size 4096 -flags 3
+memmap -addr 4169138176 -size 1048576 -flags 3
+memmap -addr 1048576 -size 1072693248 -flags 3
+memmap -addr 4160774144 -size 4096 -flags 3
+memmap -addr 4160778240 -size 256 -flags 3
+memmap -addr 4160765952 -size 4096 -flags 3
+memmap -addr 4160761856 -size 4096 -flags 3
+memmap -addr 3758141440 -size 4096 -flags 3
+memmap -addr 4176478720 -size 256 -flags 3
+memmap -addr 3758137344 -size 4096 -flags 3
+memmap -addr 4170186752 -size 1048576 -flags 3
+memmap -addr 3758112768 -size 4096 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 3760193536 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4160798720 -size 4096 -flags 3
+memmap -addr 4176486400 -size 4096 -flags 3
+memmap -addr 4169732096 -size 4096 -flags 3
+memmap -addr 3758149632 -size 4096 -flags 3
+memmap -addr 4227858432 -size 16777216 -flags 3
+memmap -addr 0 -size 196608 -flags 3
+memmap -addr 4294901760 -size 65024 -flags 3
+memmap -addr 4176478208 -size 253 -flags 3
+memmap -addr 4176482304 -size 4096 -flags 3
+memmap -addr 4176479744 -size 32 -flags 3
+memmap -addr 4176479776 -size 224 -flags 3
+memmap -addr 3759144960 -size 4096 -flags 3
+memmap -addr 4160749568 -size 4096 -flags 3
+memmap -addr 4160753664 -size 4096 -flags 3
+memmap -addr 3758100480 -size 4096 -flags 3
+memmap -addr 3758104576 -size 4096 -flags 3
+memmap -addr 4160778496 -size 33 -flags 3
+source C:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0
+dow C:/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/packet_redirect/Debug/packet_redirect.elf
+----------------End of Script----------------
+
+15:57:09 INFO  : Memory regions updated for context APU
+15:57:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:09 INFO  : 'con' command is executed.
+15:57:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203344957A"} -index 0
+con
+----------------End of Script----------------
+
+11:46:20 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:46:22 INFO  : XSDB server has started successfully.
+11:46:33 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper.hdf.
+11:47:34 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:47:35 INFO  : XSDB server has started successfully.
+11:47:36 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper.hdf.
+11:47:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+13:50:55 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+13:50:57 INFO  : XSDB server has started successfully.
+13:51:02 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper.hdf.
+13:51:03 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+13:51:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1502041808000,  Project:1435872236000
+13:51:06 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_1' is different from /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper.hdf.
+13:51:06 INFO  : Copied contents of /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_1/system.hdf.
+13:51:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:51:18 INFO  : Clearing existing target manager status.
+13:51:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:51:22 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+13:52:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:52:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+13:52:07 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/HW/project/project.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+13:54:56 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
