@@ -1,3 +1,32 @@
 09:28:49 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
 09:29:07 INFO  : XSDB server has started successfully.
 09:29:11 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+09:43:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:43:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:43:45 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:43:52 INFO  : ps7_init is completed.
+09:43:52 INFO  : ps7_post_config is completed.
+09:43:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:43:54 ERROR : Unexpected error while opening JTAG UART: 
+java.lang.RuntimeException: Error while opening JTAG UART server: MDM Uart NOT Present in the System
+Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.startJTAGUARTServer(TM.java:951)
+	at com.xilinx.sdk.debug.core.internal.comm.JTAGUARTStreamsProxy.<init>(JTAGUARTStreamsProxy.java:32)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.createStreamsProxy(RemoteProcess.java:164)
+	at com.xilinx.sdk.debug.core.internal.RemoteProcess.<init>(RemoteProcess.java:65)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:750)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:45:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:48:00 INFO  : Processor reset is completed for ps7_cortexa9_0
