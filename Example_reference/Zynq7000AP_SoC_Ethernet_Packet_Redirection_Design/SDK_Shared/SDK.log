@@ -1,0 +1,292 @@
+10:40:11 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+10:40:20 INFO  : XSDB server has started successfully.
+10:40:23 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK_Shared/design_1_wrapper.hdf.
+10:49:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:49:18 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK_Shared/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:50:09 INFO  : ps7_init is completed.
+10:50:09 INFO  : ps7_post_config is completed.
+10:50:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:52:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:53:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:53:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:55:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:56:56 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:56:57 INFO  : XSDB server has started successfully.
+09:57:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:57:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:57:04 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK_Shared/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:57:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:59:18 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:59:25 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:59:26 INFO  : XSDB server has started successfully.
+09:59:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:06:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:06:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:12:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:12:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:14:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:14:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:16:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:16:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:30:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:31:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:34:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:36:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:36:55 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+10:36:55 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:37:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:38:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:38:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:38:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:38:18 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK_Shared/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:38:23 INFO  : ps7_init is completed.
+10:38:23 INFO  : ps7_post_config is completed.
+10:38:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:39:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:40:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:51:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:52:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:52:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:53:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:00:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:00:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:01:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:03:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:04:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:05:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:05:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:08:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:10:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:11:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:12:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:12:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:13:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:14:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:18:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:19:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:21:01 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:21:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:49:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:50:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:51:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:55:20 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:55:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:57:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+11:58:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:59:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:00:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:01:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:01:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:02:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:04:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:04:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:18:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:23:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:24:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:25:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:26:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:26:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:55:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:56:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+12:56:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:58:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:23:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:33:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:42:38 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:42:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:49:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:50:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:50:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:55:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:55:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:59:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:59:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:00:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:00:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:02:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:02:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:04:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:05:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:06:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:08:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:08:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:09:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:10:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:11:55 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:11:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:13:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:13:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:14:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:14:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:15:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:15:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:17:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:17:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:18:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:19:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:24:41 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:24:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:25:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:26:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:34:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:34:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:38:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:38:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:44:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:45:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:53:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:54:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:56:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:59:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:00:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:00:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:01:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:07:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:11:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:11:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:29:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:29:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:31:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:32:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:33:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:34:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:39:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:42:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:43:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:44:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:54:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:55:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:55:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:00:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:47:32 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+19:47:34 INFO  : XSDB server has started successfully.
+19:56:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:56:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+19:56:41 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK_Shared/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:56:54 INFO  : ps7_init is completed.
+19:56:54 INFO  : ps7_post_config is completed.
+19:56:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:57:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:26:11 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+20:26:14 INFO  : XSDB server has started successfully.
+20:26:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:28:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:30:10 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:02:29 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+20:02:33 INFO  : XSDB server has started successfully.
+20:02:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:02:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+20:03:02 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK_Shared/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:03:13 INFO  : ps7_init is completed.
+20:03:13 INFO  : ps7_post_config is completed.
+20:03:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:05:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:07:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:13:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:25:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:25:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:28:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:28:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:34:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:34:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:37:20 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:37:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:39:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:41:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:43:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:45:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:46:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:48:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:48:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:53:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+20:53:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:53:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:55:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:57:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:58:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:58:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:04:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:04:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:05:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:05:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:06:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:08:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:10:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:10:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:11:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:13:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:13:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:14:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:16:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:18:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:18:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:20:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:20:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:23:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:23:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:28:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:28:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:30:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:30:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:31:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:38:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:42:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:42:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:47:11 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:47:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:49:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:49:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:49:56 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:56:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:57:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:09:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:15:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:15:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:17:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:19:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:22:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:27:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:28:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:30:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:36:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:39:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:40:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:41:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:43:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:43:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:44:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:48:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:49:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:49:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:54:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:00:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:01:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:08:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:10:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:12:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:13:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:19:33 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

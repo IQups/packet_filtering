@@ -1,6 +1,470 @@
-11:42:38 **** Incremental Build of configuration Debug for project phy_loopback_test ****
+09:56:50 **** Auto Build of configuration Debug for project phy_loopback_test ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/testperiph.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.d" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:63:11: warning: unused variable 'Status' [-Wunused-variable]
+       int Status;
+           ^
+Finished building: ../src/testperiph.c
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.d" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+In file included from ../src/xemacps_example_intr_dma.c:118:0:
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaIntrExample':
+../src/xemacps_example.h:94:30: warning: statement with no effect [-Wunused-value]
+ #define EMACPS_SLCR_DIV_MASK 0xFC0FC0FF
+                              ^
+../src/xemacps_example_intr_dma.c:326:3: note: in expansion of macro 'EMACPS_SLCR_DIV_MASK'
+  }EMACPS_SLCR_DIV_MASK;
+   ^
+../src/xemacps_example_intr_dma.c:327:22: error: 'XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV1' undeclared (first use in this function)
+   SlcrTxClkCntrl |= (XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV1 << 20);
+                      ^
+../src/xemacps_example_intr_dma.c:327:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/xemacps_example_intr_dma.c:328:22: error: 'XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV0' undeclared (first use in this function)
+   SlcrTxClkCntrl |= (XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV0 << 8);
+                      ^
+../src/xemacps_example_intr_dma.c:287:13: warning: unused variable 'BdTemplate' [-Wunused-variable]
+  XEmacPs_Bd BdTemplate;
+             ^
+../src/xemacps_example_intr_dma.c:286:18: warning: unused variable 'Config' [-Wunused-variable]
+  XEmacPs_Config *Config;
+                  ^
+../src/xemacps_example_intr_dma.c:285:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+../src/xemacps_example_intr_dma.c: At top level:
+../src/xemacps_example_intr_dma.c:333:2: error: #endif without #if
+ #endif
+  ^
+../src/xemacps_example_intr_dma.c:335:4: error: expected identifier or '(' before 'unsigned'
+  *(unsigned int *)(SLCR_LOCK_ADDR) = SLCR_LOCK_KEY_VALUE;
+    ^
+../src/xemacps_example_intr_dma.c:336:8: error: expected declaration specifiers or '...' before numeric constant
+  sleep(1);
+        ^
+../src/xemacps_example_intr_dma.c:344:2: warning: data definition has no type or storage class
+  Config = XEmacPs_LookupConfig(EmacPsDeviceId);
+  ^
+../src/xemacps_example_intr_dma.c:344:2: warning: type defaults to 'int' in declaration of 'Config' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:344:32: error: 'EmacPsDeviceId' undeclared here (not in a function)
+  Config = XEmacPs_LookupConfig(EmacPsDeviceId);
+                                ^
+../src/xemacps_example_intr_dma.c:346:2: warning: data definition has no type or storage class
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:346:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:346:33: error: 'EmacPsInstancePtr' undeclared here (not in a function)
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+                                 ^
+../src/xemacps_example_intr_dma.c:347:12: error: invalid type argument of '->' (have 'int')
+      Config->BaseAddress);
+            ^
+../src/xemacps_example_intr_dma.c:346:52: warning: passing argument 2 of 'XEmacPs_CfgInitialize' makes pointer from integer without a cast
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+                                                    ^
+In file included from ../src/xemacps_example.h:86:0,
+                 from ../src/xemacps_example_intr_dma.c:118:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps.h:736:6: note: expected 'struct XEmacPs_Config *' but argument is of type 'int'
+ LONG XEmacPs_CfgInitialize(XEmacPs *InstancePtr, XEmacPs_Config *CfgPtr,
+      ^
+../src/xemacps_example_intr_dma.c:349:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:357:2: warning: data definition has no type or storage class
+  Status = XEmacPs_SetMacAddress(EmacPsInstancePtr, EmacPsMAC, 1);
+  ^
+../src/xemacps_example_intr_dma.c:357:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:357:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:358:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:366:2: warning: data definition has no type or storage class
+  Status = XEmacPs_SetHandler(EmacPsInstancePtr,
+  ^
+../src/xemacps_example_intr_dma.c:366:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:366:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:370:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '|=' token
+  Status |=
+         ^
+../src/xemacps_example_intr_dma.c:375:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '|=' token
+  Status |=
+         ^
+../src/xemacps_example_intr_dma.c:379:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:388:23: error: expected declaration specifiers or '...' before numeric constant
+  Xil_SetTlbAttributes(0x0FF00000, 0xc02);
+                       ^
+../src/xemacps_example_intr_dma.c:388:35: error: expected declaration specifiers or '...' before numeric constant
+  Xil_SetTlbAttributes(0x0FF00000, 0xc02);
+                                   ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps.h:335:0,
+                 from ../src/xemacps_example.h:86,
+                 from ../src/xemacps_example_intr_dma.c:118:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:124:12: error: expected declaration specifiers or '...' before '(' token
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+            ^
+../src/xemacps_example_intr_dma.c:401:2: note: in expansion of macro 'XEmacPs_BdClear'
+  XEmacPs_BdClear(&BdTemplate);
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:124:21: error: expected declaration specifiers or '...' before numeric constant
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+                     ^
+../src/xemacps_example_intr_dma.c:401:2: note: in expansion of macro 'XEmacPs_BdClear'
+src/subdir.mk:30: recipe for target 'src/xemacps_example_intr_dma.o' failed
+  XEmacPs_BdClear(&BdTemplate);
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:124:24: error: expected declaration specifiers or '...' before 'sizeof'
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+                        ^
+../src/xemacps_example_intr_dma.c:401:2: note: in expansion of macro 'XEmacPs_BdClear'
+  XEmacPs_BdClear(&BdTemplate);
+  ^
+../src/xemacps_example_intr_dma.c:406:2: warning: data definition has no type or storage class
+  Status = XEmacPs_BdRingCreate(&(XEmacPs_GetRxRing
+  ^
+../src/xemacps_example_intr_dma.c:406:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:406:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:412:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:418:2: warning: data definition has no type or storage class
+  Status = XEmacPs_BdRingClone(&(XEmacPs_GetRxRing(EmacPsInstancePtr)),
+  ^
+../src/xemacps_example_intr_dma.c:418:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:418:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:419:12: error: 'BdTemplate' undeclared here (not in a function)
+           &BdTemplate, XEMACPS_RECV);
+            ^
+../src/xemacps_example_intr_dma.c:420:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps.h:335:0,
+                 from ../src/xemacps_example.h:86,
+                 from ../src/xemacps_example_intr_dma.c:118:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:124:12: error: expected declaration specifiers or '...' before '(' token
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+            ^
+../src/xemacps_example_intr_dma.c:436:2: note: in expansion of macro 'XEmacPs_BdClear'
+  XEmacPs_BdClear(&BdTemplate);
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:124:21: error: expected declaration specifiers or '...' before numeric constant
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+                     ^
+../src/xemacps_example_intr_dma.c:436:2: note: in expansion of macro 'XEmacPs_BdClear'
+  XEmacPs_BdClear(&BdTemplate);
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:124:24: error: expected declaration specifiers or '...' before 'sizeof'
+     memset((BdPtr), 0, sizeof(XEmacPs_Bd))
+                        ^
+../src/xemacps_example_intr_dma.c:436:2: note: in expansion of macro 'XEmacPs_BdClear'
+  XEmacPs_BdClear(&BdTemplate);
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:161:8: error: expected identifier or '(' before 'u32'
+     (*(u32 *)((UINTPTR)(void*)(BaseAddress) + (u32)(Offset)) = (u32)(Data))
+        ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:228:5: note: in expansion of macro 'XEmacPs_BdWrite'
+     XEmacPs_BdWrite((BdPtr), XEMACPS_BD_STAT_OFFSET,              \
+     ^
+../src/xemacps_example_intr_dma.c:437:2: note: in expansion of macro 'XEmacPs_BdSetStatus'
+  XEmacPs_BdSetStatus(&BdTemplate, XEMACPS_TXBUF_USED_MASK);
+  ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:161:14: error: expected ')' before '(' token
+     (*(u32 *)((UINTPTR)(void*)(BaseAddress) + (u32)(Offset)) = (u32)(Data))
+              ^
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps_bd.h:228:5: note: in expansion of macro 'XEmacPs_BdWrite'
+     XEmacPs_BdWrite((BdPtr), XEMACPS_BD_STAT_OFFSET,              \
+     ^
+../src/xemacps_example_intr_dma.c:437:2: note: in expansion of macro 'XEmacPs_BdSetStatus'
+  XEmacPs_BdSetStatus(&BdTemplate, XEMACPS_TXBUF_USED_MASK);
+  ^
+../src/xemacps_example_intr_dma.c:442:2: warning: data definition has no type or storage class
+  Status = XEmacPs_BdRingCreate(&(XEmacPs_GetTxRing
+  ^
+../src/xemacps_example_intr_dma.c:442:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:442:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:448:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:453:2: warning: data definition has no type or storage class
+  Status = XEmacPs_BdRingClone(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+  ^
+../src/xemacps_example_intr_dma.c:453:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:453:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:455:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:465:2: warning: data definition has no type or storage class
+  XEmacPs_SetMdioDivisor(EmacPsInstancePtr, MDC_DIV_224);
+  ^
+../src/xemacps_example_intr_dma.c:465:2: warning: type defaults to 'int' in declaration of 'XEmacPs_SetMdioDivisor' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:465:2: warning: parameter names (without types) in function declaration
+../src/xemacps_example_intr_dma.c:465:2: error: conflicting types for 'XEmacPs_SetMdioDivisor'
+../src/xemacps_example_intr_dma.c:220:6: note: previous declaration of 'XEmacPs_SetMdioDivisor' was here
+ void XEmacPs_SetMdioDivisor(XEmacPs *InstancePtr, XEmacPs_MdcDiv Divisor);
+      ^
+../src/xemacps_example_intr_dma.c:466:8: error: expected declaration specifiers or '...' before numeric constant
+  sleep(1);
+        ^
+In file included from ../src/xemacps_example_intr_dma.c:118:0:
+../src/xemacps_example.h:91:34: error: expected ')' before numeric constant
+ #define EMACPS_LOOPBACK_SPEED_1G 1000 /* 1000Mbps */
+                                  ^
+../src/xemacps_example_intr_dma.c:469:47: note: in expansion of macro 'EMACPS_LOOPBACK_SPEED_1G'
+  XEmacPs_SetOperatingSpeed(EmacPsInstancePtr, EMACPS_LOOPBACK_SPEED_1G);
+                                               ^
+../src/xemacps_example_intr_dma.c:474:2: warning: data definition has no type or storage class
+  Status = EmacPsSetupIntrSystem(IntcInstancePtr,
+  ^
+../src/xemacps_example_intr_dma.c:474:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:474:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:474:33: error: 'IntcInstancePtr' undeclared here (not in a function)
+  Status = EmacPsSetupIntrSystem(IntcInstancePtr,
+                                 ^
+../src/xemacps_example_intr_dma.c:475:25: error: 'EmacPsIntrId' undeclared here (not in a function)
+      EmacPsInstancePtr, EmacPsIntrId);
+                         ^
+../src/xemacps_example_intr_dma.c:479:2: warning: data definition has no type or storage class
+  Status = EmacPsDmaSingleFrameIntrRxtoPL(EmacPsInstancePtr);
+  ^
+../src/xemacps_example_intr_dma.c:479:2: warning: type defaults to 'int' in declaration of 'Status' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:479:2: error: redefinition of 'Status'
+../src/xemacps_example_intr_dma.c:346:2: note: previous definition of 'Status' was here
+  Status = XEmacPs_CfgInitialize(EmacPsInstancePtr, Config,
+  ^
+../src/xemacps_example_intr_dma.c:479:2: warning: implicit declaration of function 'EmacPsDmaSingleFrameIntrRxtoPL' [-Wimplicit-function-declaration]
+  Status = EmacPsDmaSingleFrameIntrRxtoPL(EmacPsInstancePtr);
+  ^
+../src/xemacps_example_intr_dma.c:480:2: error: expected identifier or '(' before 'if'
+  if (Status != XST_SUCCESS) {
+  ^
+../src/xemacps_example_intr_dma.c:487:2: warning: data definition has no type or storage class
+  EmacPsDisableIntrSystem(IntcInstancePtr, EmacPsIntrId);
+  ^
+../src/xemacps_example_intr_dma.c:487:2: warning: type defaults to 'int' in declaration of 'EmacPsDisableIntrSystem' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:487:2: warning: parameter names (without types) in function declaration
+../src/xemacps_example_intr_dma.c:487:2: error: conflicting types for 'EmacPsDisableIntrSystem'
+../src/xemacps_example_intr_dma.c:208:13: note: previous declaration of 'EmacPsDisableIntrSystem' was here
+ static void EmacPsDisableIntrSystem(XScuGic * IntcInstancePtr,
+             ^
+../src/xemacps_example_intr_dma.c:492:2: warning: data definition has no type or storage class
+  XEmacPs_Stop(EmacPsInstancePtr);
+  ^
+../src/xemacps_example_intr_dma.c:492:2: warning: type defaults to 'int' in declaration of 'XEmacPs_Stop' [-Wimplicit-int]
+../src/xemacps_example_intr_dma.c:492:2: warning: parameter names (without types) in function declaration
+../src/xemacps_example_intr_dma.c:492:2: error: conflicting types for 'XEmacPs_Stop'
+In file included from ../src/xemacps_example.h:86:0,
+                 from ../src/xemacps_example_intr_dma.c:118:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xemacps.h:739:6: note: previous declaration of 'XEmacPs_Stop' was here
+ void XEmacPs_Stop(XEmacPs *InstancePtr);
+      ^
+../src/xemacps_example_intr_dma.c:494:2: error: expected identifier or '(' before 'return'
+  return XST_SUCCESS;
+  ^
+../src/xemacps_example_intr_dma.c:495:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:536:16: warning: assignment makes pointer from integer without a cast
+  rxvd_buffer_0 = PACKET_BUFFER_0;
+                ^
+../src/xemacps_example_intr_dma.c:537:16: warning: assignment makes pointer from integer without a cast
+  rxvd_buffer_1 = PACKET_BUFFER_1;
+                ^
+../src/xemacps_example_intr_dma.c:648:47: warning: assignment makes integer from pointer without a cast
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:649:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
+    ^
+../src/xemacps_example_intr_dma.c:649:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:649:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/xemacps_example_intr_dma.c:649:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:659:47: warning: assignment makes integer from pointer without a cast
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:660:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
+    ^
+../src/xemacps_example_intr_dma.c:660:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:660:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/xemacps_example_intr_dma.c:660:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:736:3: warning: implicit declaration of function 'PrintData' [-Wimplicit-function-declaration]
+   PrintData(PACKET_BUFFER_0);
+   ^
+../src/xemacps_example_intr_dma.c:533:24: warning: variable 'rxvd_buffer_1' set but not used [-Wunused-but-set-variable]
+  char *rxvd_buffer_0, *rxvd_buffer_1;
+                        ^
+../src/xemacps_example_intr_dma.c:533:8: warning: variable 'rxvd_buffer_0' set but not used [-Wunused-but-set-variable]
+  char *rxvd_buffer_0, *rxvd_buffer_1;
+        ^
+../src/xemacps_example_intr_dma.c:532:7: warning: unused variable 'temp_char' [-Wunused-variable]
+  char temp_char;
+       ^
+../src/xemacps_example_intr_dma.c:531:6: warning: unused variable 'DataError' [-Wunused-variable]
+  u32 DataError;
+      ^
+../src/xemacps_example_intr_dma.c:529:8: warning: unused variable 'j' [-Wunused-variable]
+  u32 i,j;
+        ^
+../src/xemacps_example_intr_dma.c:529:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i,j;
+      ^
+../src/xemacps_example_intr_dma.c:523:14: warning: unused variable 'Bd2RxPtr' [-Wunused-variable]
+  XEmacPs_Bd *Bd2RxPtr;
+              ^
+../src/xemacps_example_intr_dma.c:522:14: warning: unused variable 'Bd1RxPtr' [-Wunused-variable]
+  XEmacPs_Bd *Bd1RxPtr;
+              ^
+../src/xemacps_example_intr_dma.c:521:14: warning: unused variable 'Bd2Ptr' [-Wunused-variable]
+  XEmacPs_Bd *Bd2Ptr;
+              ^
+../src/xemacps_example_intr_dma.c:520:14: warning: unused variable 'Bd1Ptr' [-Wunused-variable]
+  XEmacPs_Bd *Bd1Ptr;
+              ^
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrRxtoPL':
+../src/xemacps_example_intr_dma.c:892:2: warning: implicit declaration of function 'ppu_rx_test' [-Wimplicit-function-declaration]
+  Status = ppu_rx_test(EmacPsInstancePtr);
+  ^
+../src/xemacps_example_intr_dma.c:840:14: warning: unused variable 'Bd2Ptr' [-Wunused-variable]
+  XEmacPs_Bd *Bd2Ptr;
+              ^
+../src/xemacps_example_intr_dma.c:837:6: warning: unused variable 'PayloadSize' [-Wunused-variable]
+  u32 PayloadSize = 1000;
+      ^
+../src/xemacps_example_intr_dma.c: At top level:
+../src/xemacps_example_intr_dma.c:1237:13: error: conflicting types for 'EmacPsDisableIntrSystem'
+ static void EmacPsDisableIntrSystem(XScuGic * IntcInstancePtr,
+             ^
+../src/xemacps_example_intr_dma.c:487:2: note: previous declaration of 'EmacPsDisableIntrSystem' was here
+  EmacPsDisableIntrSystem(IntcInstancePtr, EmacPsIntrId);
+  ^
+../src/xemacps_example_intr_dma.c: In function 'XEmacPsRecvHandler':
+../src/xemacps_example_intr_dma.c:1292:6: warning: unused variable 'NumRxBuf' [-Wunused-variable]
+  u32 NumRxBuf =0;
+      ^
+../src/xemacps_example_intr_dma.c: In function 'ppu_test':
+../src/xemacps_example_intr_dma.c:1381:16: warning: assignment makes pointer from integer without a cast
+  rxvd_buffer_0 = PACKET_BUFFER_0;
+                ^
+../src/xemacps_example_intr_dma.c:1382:16: warning: assignment makes pointer from integer without a cast
+  rxvd_buffer_1 = PACKET_BUFFER_1;
+                ^
+../src/xemacps_example_intr_dma.c:1393:30: warning: passing argument 1 of 'EmacPsUtilFrameHdrFormatMAC' from incompatible pointer type
+  EmacPsUtilFrameHdrFormatMAC(&TxBuffer[0][0], EmacPsMAC);
+                              ^
+In file included from ../src/xemacps_example_intr_dma.c:118:0:
+../src/xemacps_example.h:117:6: note: expected 'char (*)[1536]' but argument is of type 'char *'
+ void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr);
+      ^
+../src/xemacps_example_intr_dma.c:1411:37: warning: assignment makes integer from pointer without a cast
+  *(u32*)(TX_BD_LIST_START_ADDRESS ) = &TxBuffer[0][0];
+                                     ^
+../src/xemacps_example_intr_dma.c:1425:47: warning: assignment makes integer from pointer without a cast
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:1426:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
+    ^
+../src/xemacps_example_intr_dma.c:1426:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1426:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1426:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1436:47: warning: assignment makes integer from pointer without a cast
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:1437:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
+    ^
+../src/xemacps_example_intr_dma.c:1437:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1437:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1437:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1377:7: warning: unused variable 'temp_char' [-Wunused-variable]
+  char temp_char;
+       ^
+../src/xemacps_example_intr_dma.c:1376:6: warning: unused variable 'DataError' [-Wunused-variable]
+  u32 DataError;
+      ^
+../src/xemacps_example_intr_dma.c: At top level:
+../src/xemacps_example_intr_dma.c:1507:6: warning: conflicting types for 'ppu_rx_test'
+ void ppu_rx_test(XEmacPs *EmacPsInstancePtr)
+      ^
+../src/xemacps_example_intr_dma.c:892:11: note: previous implicit declaration of 'ppu_rx_test' was here
+  Status = ppu_rx_test(EmacPsInstancePtr);
+           ^
+../src/xemacps_example_intr_dma.c: In function 'ppu_rx_test':
+../src/xemacps_example_intr_dma.c:1516:16: warning: assignment makes pointer from integer without a cast
+  rxvd_buffer_0 = PACKET_BUFFER_0;
+                ^
+../src/xemacps_example_intr_dma.c:1517:16: warning: assignment makes pointer from integer without a cast
+  rxvd_buffer_1 = PACKET_BUFFER_1;
+                ^
+../src/xemacps_example_intr_dma.c:1535:47: warning: assignment makes integer from pointer without a cast
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:1536:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
+    ^
+../src/xemacps_example_intr_dma.c:1536:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1536:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1536:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1546:47: warning: assignment makes integer from pointer without a cast
+    *(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+                                               ^
+../src/xemacps_example_intr_dma.c:1547:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+    printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
+    ^
+../src/xemacps_example_intr_dma.c:1547:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1547:4: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1547:4: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'char *' [-Wformat=]
+../src/xemacps_example_intr_dma.c:1512:7: warning: unused variable 'temp_char' [-Wunused-variable]
+  char temp_char;
+       ^
+../src/xemacps_example_intr_dma.c:1511:6: warning: unused variable 'DataError' [-Wunused-variable]
+  u32 DataError;
+      ^
+../src/xemacps_example_intr_dma.c:1509:8: warning: unused variable 'j' [-Wunused-variable]
+  u32 i,j;
+        ^
+../src/xemacps_example_intr_dma.c: At top level:
+../src/xemacps_example_intr_dma.c:1590:6: warning: conflicting types for 'PrintData'
+ void PrintData(char *data_ptr)
+      ^
+../src/xemacps_example_intr_dma.c:736:3: note: previous implicit declaration of 'PrintData' was here
+   PrintData(PACKET_BUFFER_0);
+   ^
+../src/xemacps_example_intr_dma.c:1237:13: warning: 'EmacPsDisableIntrSystem' defined but not used [-Wunused-function]
+ static void EmacPsDisableIntrSystem(XScuGic * IntcInstancePtr,
+             ^
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaIntrExample':
+../src/xemacps_example_intr_dma.c:332:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [src/xemacps_example_intr_dma.o] Error 1
 
-11:42:38 Build Finished (took 122ms)
+09:56:50 Build Finished (took 218ms)
 

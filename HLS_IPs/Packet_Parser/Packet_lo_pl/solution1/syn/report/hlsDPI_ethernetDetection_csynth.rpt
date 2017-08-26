@@ -1,0 +1,169 @@
+
+
+================================================================
+== Vivado HLS Report for 'hlsDPI_ethernetDetection'
+================================================================
+* Date:           Sat Aug 26 11:22:37 2017
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        Packet_lo_pl
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      4.38|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     20|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      4|
+|Register         |        -|      -|     431|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     431|     24|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |ap_sig_bdd_115               |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_197               |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_52                |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_56                |    and   |      0|  0|   1|           1|           1|
+    |grp_nbreadreq_fu_76_p6       |    and   |      0|  0|   1|           1|           0|
+    |parser2dpi_V_data_V1_status  |    and   |      0|  0|   1|           1|           1|
+    |grp_fu_118_p2                |   icmp   |      0|  0|   6|          16|          12|
+    |tmp_7_fu_234_p2              |   icmp   |      0|  0|   6|          16|          12|
+    |ap_sig_bdd_102               |    or    |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_63                |    or    |      0|  0|   1|           1|           1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |Total                        |          |      0|  0|  20|          40|          31|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm1      |   2|          3|    2|          6|
+    |dpiDetectState  |   2|          4|    2|          8|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |   4|          7|    4|         14|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+-----+----+-----+-----------+
+    |             Name            |  FF | LUT| Bits| Const Bits|
+    +-----------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm0                   |    1|   0|    1|          0|
+    |ap_CS_fsm1                   |    2|   0|    2|          0|
+    |ap_done_reg                  |    1|   0|    1|          0|
+    |dmp_macType_V                |   16|   0|   16|          0|
+    |dmp_prevWord_data_V          |   64|   0|   64|          0|
+    |dmp_prevWord_last_V          |    1|   0|    1|          0|
+    |dmp_prevWord_strb_V          |    8|   0|    8|          0|
+    |dmp_prevWord_user_V          |  128|   0|  128|          0|
+    |dpiDetectState               |    2|   0|    2|          0|
+    |dpiDetectState_load_reg_252  |    2|   0|    2|          0|
+    |tmp_1_reg_292                |    1|   0|    1|          0|
+    |tmp_2_reg_280                |    1|   0|    1|          0|
+    |tmp_4_reg_276                |    1|   0|    1|          0|
+    |tmp_7_reg_296                |    1|   0|    1|          0|
+    |tmp_9_reg_288                |    1|   0|    1|          0|
+    |tmp_data_V_3_reg_256         |   64|   0|   64|          0|
+    |tmp_last_V_3_reg_271         |    1|   0|    1|          0|
+    |tmp_strb_V_3_reg_261         |    8|   0|    8|          0|
+    |tmp_user_V_3_reg_266         |  128|   0|  128|          0|
+    +-----------------------------+-----+----+-----+-----------+
+    |Total                        |  431|   0|  431|          0|
+    +-----------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+--------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++----------------------------+-----+-----+------------+--------------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|ap_done                     | out |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs | hlsDPI_ethernetDetection | return value |
+|inData_TVALID               |  in |    1|    axis    |      inData_V_data_V     |    pointer   |
+|inData_TDATA                |  in |   64|    axis    |      inData_V_data_V     |    pointer   |
+|inData_TREADY               | out |    1|    axis    |      inData_V_last_V     |    pointer   |
+|inData_TLAST                |  in |    1|    axis    |      inData_V_last_V     |    pointer   |
+|inData_TSTRB                |  in |    8|    axis    |      inData_V_strb_V     |    pointer   |
+|inData_TUSER                |  in |  128|    axis    |      inData_V_user_V     |    pointer   |
+|parser2dpi_V_data_V_din     | out |   64|   ap_fifo  |    parser2dpi_V_data_V   |    pointer   |
+|parser2dpi_V_data_V_full_n  |  in |    1|   ap_fifo  |    parser2dpi_V_data_V   |    pointer   |
+|parser2dpi_V_data_V_write   | out |    1|   ap_fifo  |    parser2dpi_V_data_V   |    pointer   |
+|parser2dpi_V_strb_V_din     | out |    8|   ap_fifo  |    parser2dpi_V_strb_V   |    pointer   |
+|parser2dpi_V_strb_V_full_n  |  in |    1|   ap_fifo  |    parser2dpi_V_strb_V   |    pointer   |
+|parser2dpi_V_strb_V_write   | out |    1|   ap_fifo  |    parser2dpi_V_strb_V   |    pointer   |
+|parser2dpi_V_user_V_din     | out |  128|   ap_fifo  |    parser2dpi_V_user_V   |    pointer   |
+|parser2dpi_V_user_V_full_n  |  in |    1|   ap_fifo  |    parser2dpi_V_user_V   |    pointer   |
+|parser2dpi_V_user_V_write   | out |    1|   ap_fifo  |    parser2dpi_V_user_V   |    pointer   |
+|parser2dpi_V_last_V_din     | out |    1|   ap_fifo  |    parser2dpi_V_last_V   |    pointer   |
+|parser2dpi_V_last_V_full_n  |  in |    1|   ap_fifo  |    parser2dpi_V_last_V   |    pointer   |
+|parser2dpi_V_last_V_write   | out |    1|   ap_fifo  |    parser2dpi_V_last_V   |    pointer   |
++----------------------------+-----+-----+------------+--------------------------+--------------+
+

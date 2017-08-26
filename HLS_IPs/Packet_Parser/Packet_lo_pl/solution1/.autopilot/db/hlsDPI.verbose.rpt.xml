@@ -1,0 +1,130 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hlsDPI'" level="0">
+<item name = "Date">Sat Aug 26 11:22:37 2017
+</item>
+<item name = "Version">2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)</item>
+<item name = "Project">Packet_lo_pl</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 16.89, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">3, 3, 1, 1, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_hlsDPI_ethernetDetection_fu_240">hlsDPI_ethernetDetection, 1, 1, 1, 1, function</column>
+<column name="grp_hlsDPI_dpi_fu_148">hlsDPI_dpi, 1, 1, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, -, -</column>
+<column name="FIFO">12, -, 238, 190</column>
+<column name="Instance">-, -, 1081, 547</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, 4, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">4, 0, 1, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="hlsDPI_dpi_U0">hlsDPI_dpi, 0, 0, 650, 523</column>
+<column name="hlsDPI_ethernetDetection_U0">hlsDPI_ethernetDetection, 0, 0, 431, 24</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="parser2dpi_V_data_V_U">4, 80, 55, 16, 64, 1024</column>
+<column name="parser2dpi_V_last_V_U">0, 7, 21, 16, 1, 16</column>
+<column name="parser2dpi_V_strb_V_U">0, 7, 25, 16, 8, 128</column>
+<column name="parser2dpi_V_user_V_U">8, 144, 89, 16, 128, 2048</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_hlsDPI_dpi_U0">1, 0, 1, 0</column>
+<column name="ap_reg_procdone_hlsDPI_ethernetDetection_U0">1, 0, 1, 0</column>
+<column name="hlsDPI_dpi_U0_ap_start">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="inData_TDATA">in, 64, axis, inData_V_data_V, pointer</column>
+<column name="inData_TSTRB">in, 8, axis, inData_V_strb_V, pointer</column>
+<column name="inData_TUSER">in, 128, axis, inData_V_user_V, pointer</column>
+<column name="inData_TLAST">in, 1, axis, inData_V_last_V, pointer</column>
+<column name="inData_TVALID">in, 1, axis, inData_V_last_V, pointer</column>
+<column name="inData_TREADY">out, 1, axis, inData_V_last_V, pointer</column>
+<column name="outData_TDATA">out, 64, axis, outData_V_data_V, pointer</column>
+<column name="outData_TSTRB">out, 8, axis, outData_V_strb_V, pointer</column>
+<column name="outData_TUSER">out, 128, axis, outData_V_user_V, pointer</column>
+<column name="outData_TLAST">out, 1, axis, outData_V_last_V, pointer</column>
+<column name="outData_TVALID">out, 1, axis, outData_V_last_V, pointer</column>
+<column name="outData_TREADY">in, 1, axis, outData_V_last_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hlsDPI, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, hlsDPI, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, hlsDPI, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, hlsDPI, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, hlsDPI, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, hlsDPI, return value</column>
+</table>
+</item>
+</section>
+</profile>

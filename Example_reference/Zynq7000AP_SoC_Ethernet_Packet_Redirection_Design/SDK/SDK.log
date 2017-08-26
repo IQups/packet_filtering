@@ -30,3 +30,1053 @@ Could not detect MDM peripheral on hardware. Please check:
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
 09:45:14 INFO  : Processor reset is completed for ps7_cortexa9_0
 09:48:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:51:22 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+13:51:27 INFO  : XSDB server has started successfully.
+13:51:46 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+13:51:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:51:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1502125259000,  Project:1502041808000
+13:51:49 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+13:51:49 INFO  : Copied contents of /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+13:51:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:51:56 INFO  : 
+13:51:57 INFO  : Updating hardware inferred compiler options for phy_loopback_test.
+13:51:57 INFO  : Clearing existing target manager status.
+13:52:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1502128274000,  Project:1502125259000
+13:52:22 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:52:23 INFO  : Copied contents of /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+13:52:26 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:52:28 INFO  : 
+13:52:29 INFO  : Updating hardware inferred compiler options for phy_loopback_test.
+13:52:29 INFO  : Clearing existing target manager status.
+13:53:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:53:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+13:53:16 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:53:26 INFO  : ps7_init is completed.
+13:53:26 INFO  : ps7_post_config is completed.
+13:53:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:53:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:02:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+01:00:38 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:34:58 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+10:35:03 INFO  : XSDB server has started successfully.
+10:35:12 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+10:35:12 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:36:40 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+10:36:41 INFO  : XSDB server has started successfully.
+10:36:41 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+10:36:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:37:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:37:09 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:37:22 INFO  : ps7_init is completed.
+10:37:22 INFO  : ps7_post_config is completed.
+10:37:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:43:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:47:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:04:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:05:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:06:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:09:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:10:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:16:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:22:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:22:38 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:24:44 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf800078c
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+11:24:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:25:01 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:25:05 INFO  : ps7_init is completed.
+11:25:05 INFO  : ps7_post_config is completed.
+11:25:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:25:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:25:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:32:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:32:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:35:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:36:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:36:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:39:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:41:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:42:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:46:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:46:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:55:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:58:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:13:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:13:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:14:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:16:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:17:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:28:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:30:05 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:30:13 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+14:30:13 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 64"
+14:30:13 ERROR : Disconnect target failed.
+14:30:13 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:30:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:30:30 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:30:34 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:30:34 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:30:45 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:673)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:298)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:30:45 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:31:00 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+14:31:00 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:31:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:31:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:31:08 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:31:12 ERROR : Checking FPGA configuration failed..Lost communication with jtag cable. Run "xdisconnect -cable"
+                           and start over again
+
+
+14:31:12 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Lost communication with jtag cable. Run "xdisconnect -cable"
+                           and start over again
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:31:12 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:31:48 ERROR : Checking FPGA configuration failed..Lost communication with jtag cable. Run "xdisconnect -cable"
+                           and start over again
+
+
+14:31:48 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Lost communication with jtag cable. Run "xdisconnect -cable"
+                           and start over again
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:31:48 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:32:03 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+14:32:03 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:329)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:308)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:212)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+14:32:03 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:32:22 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+14:32:24 INFO  : XSDB server has started successfully.
+14:32:29 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+14:32:32 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:32:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:32:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:32:37 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:41:54 INFO  : ps7_init is completed.
+14:41:54 INFO  : ps7_post_config is completed.
+14:41:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:50:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:53:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:07:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:09:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:11:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:25:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:33:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:33:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:33:10 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:33:49 INFO  : ps7_init is completed.
+09:33:49 INFO  : ps7_post_config is completed.
+09:33:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:34:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:34:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:34:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:35:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:36:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:37:01 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:37:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:38:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:39:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:39:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:39:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:39:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:44:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:51:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:51:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:52:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:54:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:55:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:56:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:00:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:01:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:01:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:02:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:46:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:46:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:47:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:49:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:14:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:18:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:19:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:28:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:35:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:36:37 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+11:37:34 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+11:37:34 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 64"
+11:37:34 ERROR : Disconnect target failed.
+11:37:34 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+11:37:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:37:46 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:37:53 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+11:37:53 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+11:38:06 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+11:38:06 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+11:38:07 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+11:38:07 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:329)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:308)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:212)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+11:38:07 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:38:31 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:38:34 INFO  : XSDB server has started successfully.
+11:38:43 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+11:38:43 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:38:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:38:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:38:57 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:39:06 INFO  : ps7_init is completed.
+11:39:06 INFO  : ps7_post_config is completed.
+11:39:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:40:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:44:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:05:05 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Xilinx PYNQ-Z1-003017A4D303A on TCP:127.0.0.1:3121
+
+
+14:05:05 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Xilinx PYNQ-Z1-003017A4D303A on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:381)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:290)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:05:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:05:16 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:05:26 INFO  : ps7_init is completed.
+14:05:26 INFO  : ps7_post_config is completed.
+14:05:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:07:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:07:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:49:54 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:49:57 INFO  : XSDB server has started successfully.
+09:50:06 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+09:50:07 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:02:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+13:02:41 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:03:40 INFO  : ps7_init is completed.
+13:03:41 INFO  : ps7_post_config is completed.
+13:03:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:05:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:08:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:08:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:08:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:11:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:13:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:22:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:22:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:26:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:27:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:29:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:30:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:31:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:34:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:34:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:36:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:38:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:39:40 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:39:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:40:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:41:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:41:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:33:25 INFO  : Example project standalone_bsp_0_xemacps_example_intr_dma_1 has been created successfully.
+11:37:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:37:04 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:46:45 INFO  : ps7_init is completed.
+11:46:45 INFO  : ps7_post_config is completed.
+11:46:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:51:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:51:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:51:58 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:52:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:53:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:53:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:54:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:06:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:06:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+12:06:14 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:06:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:07:38 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+12:07:38 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 64"
+12:07:38 ERROR : Disconnect target failed.
+12:08:06 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+12:08:06 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+12:09:55 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+12:09:55 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+12:18:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+12:18:23 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:18:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+12:18:44 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:19:00 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+12:19:00 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+12:19:17 ERROR : Disconnect target failed.No Target with ID 64 in the System
+
+
+12:19:17 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: No Target with ID 64 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:329)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:308)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:212)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+12:19:17 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:19:44 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+12:19:47 INFO  : XSDB server has started successfully.
+12:19:56 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+12:20:01 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:21:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+12:21:33 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:22:14 INFO  : ps7_init is completed.
+12:22:15 INFO  : ps7_post_config is completed.
+12:22:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:23:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:24:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:25:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:28:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:36:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:36:53 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:38:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:38:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:40:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:45:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:47:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:48:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:56:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:42:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:46:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:47:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:49:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:52:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:53:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:54:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:56:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:57:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:57:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:58:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:59:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:12:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:15:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:17:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:19:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:23:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:47:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:47:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:47:37 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:47:42 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot flush JTAG buffers
+    Error Address = 0xf8000114
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:47:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:47:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:48:03 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:48:08 INFO  : ps7_init is completed.
+14:48:08 INFO  : ps7_post_config is completed.
+14:48:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:11:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:14:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:17:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:20:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:21:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+04:16:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:16:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+04:16:26 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:16:46 INFO  : ps7_init is completed.
+04:16:46 INFO  : ps7_post_config is completed.
+04:16:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+04:28:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+04:32:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+04:32:59 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:04:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:04:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+06:04:07 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:04:10 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8000008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+06:04:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:04:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+06:04:22 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:04:35 INFO  : ps7_init is completed.
+06:04:36 INFO  : ps7_post_config is completed.
+06:04:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:04:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:06:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:07:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:09:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:10:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:11:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:12:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:13:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:14:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:15:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:16:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+06:57:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:57:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+06:57:11 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:57:16 INFO  : ps7_init is completed.
+06:57:16 INFO  : ps7_post_config is completed.
+06:57:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:01:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:03:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:04:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:06:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:07:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:08:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:10:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:13:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:14:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:33:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:34:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:41:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:42:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:47:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:50:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:54:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:57:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+07:59:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:04:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:08:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:16:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:19:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+08:20:10 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:28:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:29:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:30:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:41:17 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:552)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:46:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:46:19 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:46:23 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf80007d4
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:46:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:46:36 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:46:40 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf80007d0
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:46:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:47:28 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:47:34 INFO  : ps7_init is completed.
+09:47:34 INFO  : ps7_post_config is completed.
+09:47:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:49:48 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8006188
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:49:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:49:59 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:50:16 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:50:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:50:43 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:50:48 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8000138
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:52:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:53:05 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:53:10 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8000114
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:54:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:54:08 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:54:12 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8000104
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:56:43 INFO  : Refreshed build settings on project phy_loopback_test
+10:00:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:00:18 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:00:22 INFO  : ps7_init is completed.
+10:00:22 INFO  : ps7_post_config is completed.
+10:00:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:09:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:09:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:09:35 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:09:39 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf80007d0
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:09:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:09:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:10:03 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:10:06 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    Cannot access JTAG-DP: invalid ACK value (0x00, expected=0x02)
+    Error Address = 0xf8000114
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:486)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:588)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:11:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:11:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+10:11:27 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:11:30 INFO  : ps7_init is completed.
+10:11:30 INFO  : ps7_post_config is completed.
+10:11:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:39:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:30:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+14:30:13 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:30:18 INFO  : ps7_init is completed.
+14:30:18 INFO  : ps7_post_config is completed.
+14:30:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:32:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:35:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:36:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:37:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:37:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:29:33 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:29:41 INFO  : XSDB server has started successfully.
+11:29:52 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+11:29:53 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:31:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:31:23 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:31:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+11:31:55 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:33:05 INFO  : ps7_init is completed.
+11:33:05 INFO  : ps7_post_config is completed.
+11:33:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:36:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:37:15 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:37:53 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:37:57 INFO  : XSDB server has started successfully.
+11:38:07 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+11:38:08 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:38:57 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:39:41 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:42:15 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:17:34 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+12:17:38 INFO  : XSDB server has started successfully.
+12:17:47 INFO  : Processing command line option -hwspec /home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper.hdf.
+12:17:48 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:22:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+12:22:11 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:22:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:22:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:23:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+12:25:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:20:52 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+11:20:55 INFO  : XSDB server has started successfully.
+12:10:08 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+08:42:27 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+08:42:30 INFO  : XSDB server has started successfully.
+08:45:26 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:06:51 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:06:52 INFO  : XSDB server has started successfully.
+09:20:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:21:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:21:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:21:13 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:21:29 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:552)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+09:26:44 INFO  : ps7_init is completed.
+09:26:45 INFO  : ps7_post_config is completed.
+09:26:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:30:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:34:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:36:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:41:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:43:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:45:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:46:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:46:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:47:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:47:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:47:30 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:47:35 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:50:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:50:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:50:41 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:50:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:52:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:52:54 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:53:03 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:53:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:55:14 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:55:15 INFO  : XSDB server has started successfully.
+09:55:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:55:40 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.3/scripts/xsdb/xsdb/xsdb-server.tcl
+09:55:41 INFO  : XSDB server has started successfully.
+09:55:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D303A" && level==0} -index 1' command is executed.
+09:55:54 INFO  : FPGA configured successfully with bitstream "/home/iq/Documents/marketinternational_filter/Example_reference/Zynq7000AP_SoC_Ethernet_Packet_Redirection_Design/SDK/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:56:01 INFO  : ps7_init is completed.
+09:56:01 INFO  : ps7_post_config is completed.
+09:56:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+09:56:50 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,6 @@
+   Compiling ../../../sources/hlsDPI_IP_tb.cpp in debug mode
+   Compiling ../../../sources/hlsDPI_IP.cpp in debug mode
+   Compiling ../../../sources/ip_handler.cpp in debug mode
+   Compiling ../../../sources/packet_filter.cpp in debug mode
+   Generating csim.exe
+@I [SIM-1] CSim file generation done with 0 errors.

@@ -1,0 +1,6 @@
+09:55:57 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make all 
+make: Nothing to be done for 'all'.
+
+09:55:57 Build Finished (took 129ms)
+

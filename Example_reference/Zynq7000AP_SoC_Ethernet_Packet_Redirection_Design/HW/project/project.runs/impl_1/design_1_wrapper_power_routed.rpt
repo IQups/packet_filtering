@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.3 (lin64) Build 1368829 Mon Sep 28 20:06:39 MDT 2015
-| Date             : Sun Aug  6 13:49:23 2017
+| Date             : Mon Aug  7 12:14:09 2017
 | Host             : iq-OptiPlex-9010 running 64-bit unknown
 | Command          : 
 | Design           : design_1_wrapper
@@ -30,9 +30,9 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.465  |
-| Dynamic (W)              | 1.310  |
-| Device Static (W)        | 0.155  |
+| Total On-Chip Power (W)  | 1.466  |
+| Dynamic (W)              | 1.311  |
+| Device Static (W)        | 0.156  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 68.1   |
 | Junction Temperature (C) | 41.9   |
@@ -51,17 +51,17 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        3 |       --- |             --- |
 | Slice Logic             |     0.002 |     1832 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      688 |     53200 |            1.29 |
+|   LUT as Logic          |     0.002 |      685 |     53200 |            1.29 |
 |   Register              |    <0.001 |      738 |    106400 |            0.69 |
 |   CARRY4                |    <0.001 |        2 |     13300 |            0.02 |
 |   F7/F8 Muxes           |    <0.001 |        2 |     53200 |           <0.01 |
 |   LUT as Shift Register |    <0.001 |       17 |     17400 |            0.10 |
 |   Others                |     0.000 |      254 |       --- |             --- |
-| Signals                 |     0.004 |     1503 |       --- |             --- |
+| Signals                 |     0.004 |     1505 |       --- |             --- |
 | Block RAM               |     0.043 |       32 |       140 |           22.86 |
 | PS7                     |     1.256 |        1 |       --- |             --- |
-| Static Power            |     0.155 |          |           |                 |
-| Total                   |     1.465 |          |           |                 |
+| Static Power            |     0.156 |          |           |                 |
+| Total                   |     1.466 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.065 |       0.050 |      0.014 |
+| Vccint    |       1.000 |     0.066 |       0.051 |      0.014 |
 | Vccaux    |       1.800 |     0.020 |       0.000 |      0.020 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,21 +147,21 @@ Table of Contents
 +----------------------------------------------------------+-----------+
 | Name                                                     | Power (W) |
 +----------------------------------------------------------+-----------+
-| design_1_wrapper                                         |     1.310 |
-|   design_1_i                                             |     1.310 |
-|     axi_bram_ctrl_0                                      |     0.004 |
-|       U0                                                 |     0.004 |
-|         gext_inst.abcv4_0_ext_inst                       |     0.004 |
-|           GEN_AXI4.I_FULL_AXI                            |     0.004 |
+| design_1_wrapper                                         |     1.311 |
+|   design_1_i                                             |     1.311 |
+|     axi_bram_ctrl_0                                      |     0.005 |
+|       U0                                                 |     0.005 |
+|         gext_inst.abcv4_0_ext_inst                       |     0.005 |
+|           GEN_AXI4.I_FULL_AXI                            |     0.005 |
 |             I_RD_CHNL                                    |     0.003 |
 |               I_WRAP_BRST                                |    <0.001 |
 |             I_WR_CHNL                                    |     0.002 |
 |               BID_FIFO                                   |    <0.001 |
 |               I_WRAP_BRST                                |    <0.001 |
-|     axi_bram_ctrl_1                                      |     0.004 |
-|       U0                                                 |     0.004 |
-|         gext_inst.abcv4_0_ext_inst                       |     0.004 |
-|           GEN_AXI4.I_FULL_AXI                            |     0.004 |
+|     axi_bram_ctrl_1                                      |     0.005 |
+|       U0                                                 |     0.005 |
+|         gext_inst.abcv4_0_ext_inst                       |     0.005 |
+|           GEN_AXI4.I_FULL_AXI                            |     0.005 |
 |             I_RD_CHNL                                    |     0.003 |
 |               I_WRAP_BRST                                |    <0.001 |
 |             I_WR_CHNL                                    |     0.002 |
@@ -247,8 +247,8 @@ Table of Contents
 |                 prim_noinit.ram                          |     0.001 |
 |               ramloop[9].ram.r                           |     0.001 |
 |                 prim_noinit.ram                          |     0.001 |
-|     processing_system7_0                                 |     1.256 |
-|       inst                                               |     1.256 |
+|     processing_system7_0                                 |     1.257 |
+|       inst                                               |     1.257 |
 |         xlnx_axi_wrshim_unwrap_inst_gp0                  |     0.000 |
 |         xlnx_axi_wrshim_unwrap_inst_gp1                  |     0.000 |
 |     rst_processing_system7_0_50M                         |    <0.001 |

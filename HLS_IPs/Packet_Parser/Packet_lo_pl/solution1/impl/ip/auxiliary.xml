@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hlsExample" xd:componentRef="hlsExample" xd:initiationInterval="14" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="inData.data" xd:originalName="inData" xd:direction="in" xd:interfaceRef="inData" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="inData.strb" xd:originalName="inData" xd:direction="in" xd:interfaceRef="inData" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="inData.user" xd:originalName="inData" xd:direction="in" xd:interfaceRef="inData" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="inData.last" xd:originalName="inData" xd:direction="in" xd:interfaceRef="inData" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="queryIP" xd:originalName="queryIP" xd:direction="in" xd:interfaceRef="queryIP_V_V" xd:busTypeRef="acc_fifo" xd:dataWidth="32"/>
+  <xd:arg xd:name="outData.data" xd:originalName="outData" xd:direction="out" xd:interfaceRef="outData" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="outData.strb" xd:originalName="outData" xd:direction="out" xd:interfaceRef="outData" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="outData.user" xd:originalName="outData" xd:direction="out" xd:interfaceRef="outData" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="outData.last" xd:originalName="outData" xd:direction="out" xd:interfaceRef="outData" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="returnMAC" xd:originalName="returnMAC" xd:direction="out" xd:interfaceRef="returnMAC_V_V" xd:busTypeRef="acc_fifo" xd:dataWidth="48"/>
+  <xd:latencyEstimates xd:best-case="13" xd:worst-case="13" xd:average-case="13"/>
+  <xd:resourceEstimates xd:LUT="5333" xd:FF="6322" xd:BRAM="120" xd:DSP="0"/>
+</xd:acceleratorMap>

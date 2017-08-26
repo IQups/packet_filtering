@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vivado HLS Report for 'hlsDPI'
+================================================================
+* Date:           Sat Aug 26 11:22:37 2017
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        Packet_lo_pl
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     16.89|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    3|    3|    1|    1| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 2.28ns
+ST_1: stg_5 [2/2] 2.28ns
+codeRepl:20  call fastcc void @hlsDPI_ethernetDetection(i64* %inData_V_data_V, i8* %inData_V_strb_V, i128* %inData_V_user_V, i1* %inData_V_last_V)
+
+
+ <State 2>: 0.00ns
+ST_2: stg_6 [1/2] 0.00ns
+codeRepl:20  call fastcc void @hlsDPI_ethernetDetection(i64* %inData_V_data_V, i8* %inData_V_strb_V, i128* %inData_V_user_V, i1* %inData_V_last_V)
+
+
+ <State 3>: 0.00ns
+ST_3: stg_7 [2/2] 0.00ns
+codeRepl:21  call fastcc void @hlsDPI_dpi(i64* %outData_V_data_V, i8* %outData_V_strb_V, i128* %outData_V_user_V, i1* %outData_V_last_V)
+
+
+ <State 4>: 0.00ns
+ST_4: stg_8 [1/1] 0.00ns
+codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str12) nounwind
+
+ST_4: empty [1/1] 0.00ns
+codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_data_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i64* @parser2dpi_V_data_V, i64* @parser2dpi_V_data_V)
+
+ST_4: stg_10 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i64* @parser2dpi_V_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_19 [1/1] 0.00ns
+codeRepl:3  %empty_19 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_last_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i1* @parser2dpi_V_last_V, i1* @parser2dpi_V_last_V)
+
+ST_4: stg_12 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecInterface(i1* @parser2dpi_V_last_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_20 [1/1] 0.00ns
+codeRepl:5  %empty_20 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_strb_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i8* @parser2dpi_V_strb_V, i8* @parser2dpi_V_strb_V)
+
+ST_4: stg_14 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i8* @parser2dpi_V_strb_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_21 [1/1] 0.00ns
+codeRepl:7  %empty_21 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_user_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i128* @parser2dpi_V_user_V, i128* @parser2dpi_V_user_V)
+
+ST_4: stg_16 [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i128* @parser2dpi_V_user_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: stg_17 [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecBitsMap(i64* %inData_V_data_V), !map !7
+
+ST_4: stg_18 [1/1] 0.00ns
+codeRepl:10  call void (...)* @_ssdm_op_SpecBitsMap(i8* %inData_V_strb_V), !map !13
+
+ST_4: stg_19 [1/1] 0.00ns
+codeRepl:11  call void (...)* @_ssdm_op_SpecBitsMap(i128* %inData_V_user_V), !map !17
+
+ST_4: stg_20 [1/1] 0.00ns
+codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %inData_V_last_V), !map !21
+
+ST_4: stg_21 [1/1] 0.00ns
+codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i64* %outData_V_data_V), !map !25
+
+ST_4: stg_22 [1/1] 0.00ns
+codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i8* %outData_V_strb_V), !map !29
+
+ST_4: stg_23 [1/1] 0.00ns
+codeRepl:15  call void (...)* @_ssdm_op_SpecBitsMap(i128* %outData_V_user_V), !map !33
+
+ST_4: stg_24 [1/1] 0.00ns
+codeRepl:16  call void (...)* @_ssdm_op_SpecBitsMap(i1* %outData_V_last_V), !map !37
+
+ST_4: stg_25 [1/1] 0.00ns
+codeRepl:17  call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @hlsDPI_str) nounwind
+
+ST_4: stg_26 [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecInterface(i64* %inData_V_data_V, i8* %inData_V_strb_V, i128* %inData_V_user_V, i1* %inData_V_last_V, [5 x i8]* @p_str313, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12) nounwind
+
+ST_4: stg_27 [1/1] 0.00ns
+codeRepl:19  call void (...)* @_ssdm_op_SpecInterface(i64* %outData_V_data_V, i8* %outData_V_strb_V, i128* %outData_V_user_V, i1* %outData_V_last_V, [5 x i8]* @p_str313, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12) nounwind
+
+ST_4: stg_28 [1/2] 0.00ns
+codeRepl:21  call fastcc void @hlsDPI_dpi(i64* %outData_V_data_V, i8* %outData_V_strb_V, i128* %outData_V_user_V, i1* %outData_V_last_V)
+
+ST_4: stg_29 [1/1] 0.00ns
+codeRepl:22  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

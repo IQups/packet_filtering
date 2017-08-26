@@ -1,0 +1,7 @@
+FIFO_hlsDPI_parser2dpi_V_data_V
+FIFO_hlsDPI_parser2dpi_V_strb_V
+FIFO_hlsDPI_parser2dpi_V_user_V
+FIFO_hlsDPI_parser2dpi_V_last_V
+hlsDPI_ethernetDetection
+hlsDPI_dpi
+hlsDPI

@@ -1,0 +1,1197 @@
+
+
+================================================================
+== Vivado HLS Report for 'hlsDPI'
+================================================================
+* Date:           Sat Aug 26 11:22:37 2017
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        Packet_lo_pl
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     16.89|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    3|    3|    1|    1| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 2.28ns
+ST_1: stg_5 [2/2] 2.28ns
+codeRepl:20  call fastcc void @hlsDPI_ethernetDetection(i64* %inData_V_data_V, i8* %inData_V_strb_V, i128* %inData_V_user_V, i1* %inData_V_last_V)
+
+
+ <State 2>: 0.00ns
+ST_2: stg_6 [1/2] 0.00ns
+codeRepl:20  call fastcc void @hlsDPI_ethernetDetection(i64* %inData_V_data_V, i8* %inData_V_strb_V, i128* %inData_V_user_V, i1* %inData_V_last_V)
+
+
+ <State 3>: 0.00ns
+ST_3: stg_7 [2/2] 0.00ns
+codeRepl:21  call fastcc void @hlsDPI_dpi(i64* %outData_V_data_V, i8* %outData_V_strb_V, i128* %outData_V_user_V, i1* %outData_V_last_V)
+
+
+ <State 4>: 0.00ns
+ST_4: stg_8 [1/1] 0.00ns
+codeRepl:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str12) nounwind
+
+ST_4: empty [1/1] 0.00ns
+codeRepl:1  %empty = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_data_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i64* @parser2dpi_V_data_V, i64* @parser2dpi_V_data_V)
+
+ST_4: stg_10 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecInterface(i64* @parser2dpi_V_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_19 [1/1] 0.00ns
+codeRepl:3  %empty_19 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_last_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i1* @parser2dpi_V_last_V, i1* @parser2dpi_V_last_V)
+
+ST_4: stg_12 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecInterface(i1* @parser2dpi_V_last_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_20 [1/1] 0.00ns
+codeRepl:5  %empty_20 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_strb_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i8* @parser2dpi_V_strb_V, i8* @parser2dpi_V_strb_V)
+
+ST_4: stg_14 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i8* @parser2dpi_V_strb_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_21 [1/1] 0.00ns
+codeRepl:7  %empty_21 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @parser2dpi_OC_V_OC_user_OC_V_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i128* @parser2dpi_V_user_V, i128* @parser2dpi_V_user_V)
+
+ST_4: stg_16 [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i128* @parser2dpi_V_user_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: stg_17 [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecBitsMap(i64* %inData_V_data_V), !map !7
+
+ST_4: stg_18 [1/1] 0.00ns
+codeRepl:10  call void (...)* @_ssdm_op_SpecBitsMap(i8* %inData_V_strb_V), !map !13
+
+ST_4: stg_19 [1/1] 0.00ns
+codeRepl:11  call void (...)* @_ssdm_op_SpecBitsMap(i128* %inData_V_user_V), !map !17
+
+ST_4: stg_20 [1/1] 0.00ns
+codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %inData_V_last_V), !map !21
+
+ST_4: stg_21 [1/1] 0.00ns
+codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i64* %outData_V_data_V), !map !25
+
+ST_4: stg_22 [1/1] 0.00ns
+codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i8* %outData_V_strb_V), !map !29
+
+ST_4: stg_23 [1/1] 0.00ns
+codeRepl:15  call void (...)* @_ssdm_op_SpecBitsMap(i128* %outData_V_user_V), !map !33
+
+ST_4: stg_24 [1/1] 0.00ns
+codeRepl:16  call void (...)* @_ssdm_op_SpecBitsMap(i1* %outData_V_last_V), !map !37
+
+ST_4: stg_25 [1/1] 0.00ns
+codeRepl:17  call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @hlsDPI_str) nounwind
+
+ST_4: stg_26 [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecInterface(i64* %inData_V_data_V, i8* %inData_V_strb_V, i128* %inData_V_user_V, i1* %inData_V_last_V, [5 x i8]* @p_str313, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12) nounwind
+
+ST_4: stg_27 [1/1] 0.00ns
+codeRepl:19  call void (...)* @_ssdm_op_SpecInterface(i64* %outData_V_data_V, i8* %outData_V_strb_V, i128* %outData_V_user_V, i1* %outData_V_last_V, [5 x i8]* @p_str313, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12, [1 x i8]* @p_str12) nounwind
+
+ST_4: stg_28 [1/2] 0.00ns
+codeRepl:21  call fastcc void @hlsDPI_dpi(i64* %outData_V_data_V, i8* %outData_V_strb_V, i128* %outData_V_user_V, i1* %outData_V_last_V)
+
+ST_4: stg_29 [1/1] 0.00ns
+codeRepl:22  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is clock enabled: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ inData_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7f4d35a8ef70; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ inData_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7f4d35aa4780; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ inData_V_user_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7f4d3784eff0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ inData_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7f4d24cb46f0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outData_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f4d24cd2360; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outData_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f4d3783c540; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outData_V_user_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f4d25326150; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outData_V_last_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; mode=0x7f4d252e9290; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ dpiDetectState]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25b18040; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dmp_prevWord_data_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d37e6b690; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dmp_prevWord_strb_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d37b42ed0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dmp_prevWord_user_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25122cd0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dmp_prevWord_last_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d258a3870; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dmp_macType_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25876820; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ parser2dpi_V_data_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=3; mode=0x7f4d2587e130; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ parser2dpi_V_strb_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=3; mode=0x7f4d25148210; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ parser2dpi_V_user_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=3; mode=0x7f4d2557bfb0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ parser2dpi_V_last_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=3; mode=0x7f4d25423810; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ dpiState]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25722d60; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ MAC_SRC_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d24a6ee90; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ srcIP_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d258941d0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ newFilterIP_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d257d7230; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d24246330; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25b539d0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_6]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25819c40; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_6]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d2586fef0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d24c3b240; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d251447f0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_4]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25e01660; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_4]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25b2cbc0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_3]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d37d66b10; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_3]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d2639f1e0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d264d8620; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d2475a660; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d27f97cd0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd_1]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d247aa7c0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_vali]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d36c56630; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ filterTable_filterEntries_ipAd]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d255e52a0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ registeredFilters_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d24ca5730; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ sendCount]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d24770440; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ wordCount]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d27fa4250; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dstIP_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d36c6d6f0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dpiCode_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d25b77f70; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ ethType_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d37d51a30; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ version_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d242d8ad0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ IHL_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d37e12bf0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ ECN_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d243c4fa0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ totalLength_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d240bd8f0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ ident_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d3794bbb0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ flags_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d375ffd40; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ fragOffset_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d3792ac60; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ TTL_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d37dfe270; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ protocol_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d24313de0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ headerCRC_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; mode=0x7f4d2434fed0; pingpong=0; private_global=0; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+stg_6    (call                ) [ 00000]
+stg_8    (specdataflowpipeline) [ 00000]
+empty    (specchannel         ) [ 00000]
+stg_10   (specinterface       ) [ 00000]
+empty_19 (specchannel         ) [ 00000]
+stg_12   (specinterface       ) [ 00000]
+empty_20 (specchannel         ) [ 00000]
+stg_14   (specinterface       ) [ 00000]
+empty_21 (specchannel         ) [ 00000]
+stg_16   (specinterface       ) [ 00000]
+stg_17   (specbitsmap         ) [ 00000]
+stg_18   (specbitsmap         ) [ 00000]
+stg_19   (specbitsmap         ) [ 00000]
+stg_20   (specbitsmap         ) [ 00000]
+stg_21   (specbitsmap         ) [ 00000]
+stg_22   (specbitsmap         ) [ 00000]
+stg_23   (specbitsmap         ) [ 00000]
+stg_24   (specbitsmap         ) [ 00000]
+stg_25   (spectopmodule       ) [ 00000]
+stg_26   (specinterface       ) [ 00000]
+stg_27   (specinterface       ) [ 00000]
+stg_28   (call                ) [ 00000]
+stg_29   (ret                 ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="inData_V_data_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inData_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="inData_V_strb_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inData_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="inData_V_user_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inData_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="inData_V_last_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inData_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="outData_V_data_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outData_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="outData_V_strb_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outData_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="outData_V_user_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outData_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="outData_V_last_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outData_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="dpiDetectState">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dpiDetectState"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="dmp_prevWord_data_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dmp_prevWord_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="dmp_prevWord_strb_V">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dmp_prevWord_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="dmp_prevWord_user_V">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dmp_prevWord_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="dmp_prevWord_last_V">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dmp_prevWord_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="dmp_macType_V">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dmp_macType_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="parser2dpi_V_data_V">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_V_data_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="parser2dpi_V_strb_V">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_V_strb_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="parser2dpi_V_user_V">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_V_user_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="parser2dpi_V_last_V">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_V_last_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="dpiState">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dpiState"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="MAC_SRC_V">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="MAC_SRC_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="srcIP_V">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="srcIP_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="newFilterIP_V">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="newFilterIP_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="filterTable_filterEntries_vali_7">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="filterTable_filterEntries_ipAd_7">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="filterTable_filterEntries_vali_6">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_6"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="filterTable_filterEntries_ipAd_6">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_6"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="filterTable_filterEntries_vali_5">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="filterTable_filterEntries_ipAd_5">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1000" name="filterTable_filterEntries_vali_4">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1000" name="filterTable_filterEntries_ipAd_4">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1000" name="filterTable_filterEntries_vali_3">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1000" name="filterTable_filterEntries_ipAd_3">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1000" name="filterTable_filterEntries_vali_2">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1000" name="filterTable_filterEntries_ipAd_2">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1000" name="filterTable_filterEntries_vali_1">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1000" name="filterTable_filterEntries_ipAd_1">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1000" name="filterTable_filterEntries_vali">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_vali"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1000" name="filterTable_filterEntries_ipAd">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="filterTable_filterEntries_ipAd"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1000" name="registeredFilters_V">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="registeredFilters_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1000" name="sendCount">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sendCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1000" name="wordCount">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="wordCount"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1000" name="dstIP_V">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dstIP_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1000" name="dpiCode_V">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dpiCode_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1000" name="ethType_V">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ethType_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1000" name="version_V">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="version_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1000" name="IHL_V">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="IHL_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1000" name="ECN_V">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ECN_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1000" name="totalLength_V">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="totalLength_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1000" name="ident_V">
+<pin_list>
+<pin id="97" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ident_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="98" class="1000" name="flags_V">
+<pin_list>
+<pin id="99" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="flags_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="100" class="1000" name="fragOffset_V">
+<pin_list>
+<pin id="101" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fragOffset_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="102" class="1000" name="TTL_V">
+<pin_list>
+<pin id="103" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="TTL_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="104" class="1000" name="protocol_V">
+<pin_list>
+<pin id="105" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="protocol_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="106" class="1000" name="headerCRC_V">
+<pin_list>
+<pin id="107" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="headerCRC_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="108" class="1001" name="const_108">
+<pin_list>
+<pin id="109" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="hlsDPI_ethernetDetection"/></StgValue>
+</bind>
+</comp>
+
+<comp id="110" class="1001" name="const_110">
+<pin_list>
+<pin id="111" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="hlsDPI_dpi"/></StgValue>
+</bind>
+</comp>
+
+<comp id="112" class="1001" name="const_112">
+<pin_list>
+<pin id="113" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="114" class="1001" name="const_114">
+<pin_list>
+<pin id="115" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="116" class="1001" name="const_116">
+<pin_list>
+<pin id="117" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str12"/></StgValue>
+</bind>
+</comp>
+
+<comp id="118" class="1001" name="const_118">
+<pin_list>
+<pin id="119" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="120" class="1001" name="const_120">
+<pin_list>
+<pin id="121" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_OC_V_OC_data_OC_V_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="122" class="1001" name="const_122">
+<pin_list>
+<pin id="123" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="124" class="1001" name="const_124">
+<pin_list>
+<pin id="125" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="126" class="1001" name="const_126">
+<pin_list>
+<pin id="127" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="128" class="1001" name="const_128">
+<pin_list>
+<pin id="129" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="130" class="1001" name="const_130">
+<pin_list>
+<pin id="131" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="132" class="1001" name="const_132">
+<pin_list>
+<pin id="133" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="134" class="1001" name="const_134">
+<pin_list>
+<pin id="135" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_OC_V_OC_last_OC_V_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="136" class="1001" name="const_136">
+<pin_list>
+<pin id="137" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_OC_V_OC_strb_OC_V_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="138" class="1001" name="const_138">
+<pin_list>
+<pin id="139" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="parser2dpi_OC_V_OC_user_OC_V_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="140" class="1001" name="const_140">
+<pin_list>
+<pin id="141" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="142" class="1001" name="const_142">
+<pin_list>
+<pin id="143" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="144" class="1001" name="const_144">
+<pin_list>
+<pin id="145" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="hlsDPI_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="146" class="1001" name="const_146">
+<pin_list>
+<pin id="147" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str313"/></StgValue>
+</bind>
+</comp>
+
+<comp id="148" class="1004" name="grp_hlsDPI_dpi_fu_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="0" slack="0"/>
+<pin id="150" dir="0" index="1" bw="64" slack="0"/>
+<pin id="151" dir="0" index="2" bw="8" slack="0"/>
+<pin id="152" dir="0" index="3" bw="128" slack="0"/>
+<pin id="153" dir="0" index="4" bw="1" slack="0"/>
+<pin id="154" dir="0" index="5" bw="3" slack="0"/>
+<pin id="155" dir="0" index="6" bw="48" slack="0"/>
+<pin id="156" dir="0" index="7" bw="32" slack="0"/>
+<pin id="157" dir="0" index="8" bw="32" slack="0"/>
+<pin id="158" dir="0" index="9" bw="1" slack="0"/>
+<pin id="159" dir="0" index="10" bw="32" slack="0"/>
+<pin id="160" dir="0" index="11" bw="1" slack="0"/>
+<pin id="161" dir="0" index="12" bw="32" slack="0"/>
+<pin id="162" dir="0" index="13" bw="1" slack="0"/>
+<pin id="163" dir="0" index="14" bw="32" slack="0"/>
+<pin id="164" dir="0" index="15" bw="1" slack="0"/>
+<pin id="165" dir="0" index="16" bw="32" slack="0"/>
+<pin id="166" dir="0" index="17" bw="1" slack="0"/>
+<pin id="167" dir="0" index="18" bw="32" slack="0"/>
+<pin id="168" dir="0" index="19" bw="1" slack="0"/>
+<pin id="169" dir="0" index="20" bw="32" slack="0"/>
+<pin id="170" dir="0" index="21" bw="1" slack="0"/>
+<pin id="171" dir="0" index="22" bw="32" slack="0"/>
+<pin id="172" dir="0" index="23" bw="1" slack="0"/>
+<pin id="173" dir="0" index="24" bw="32" slack="0"/>
+<pin id="174" dir="0" index="25" bw="8" slack="0"/>
+<pin id="175" dir="0" index="26" bw="16" slack="0"/>
+<pin id="176" dir="0" index="27" bw="64" slack="0"/>
+<pin id="177" dir="0" index="28" bw="8" slack="0"/>
+<pin id="178" dir="0" index="29" bw="128" slack="0"/>
+<pin id="179" dir="0" index="30" bw="1" slack="0"/>
+<pin id="180" dir="0" index="31" bw="16" slack="0"/>
+<pin id="181" dir="0" index="32" bw="32" slack="0"/>
+<pin id="182" dir="0" index="33" bw="16" slack="0"/>
+<pin id="183" dir="0" index="34" bw="16" slack="0"/>
+<pin id="184" dir="0" index="35" bw="4" slack="0"/>
+<pin id="185" dir="0" index="36" bw="4" slack="0"/>
+<pin id="186" dir="0" index="37" bw="2" slack="0"/>
+<pin id="187" dir="0" index="38" bw="16" slack="0"/>
+<pin id="188" dir="0" index="39" bw="16" slack="0"/>
+<pin id="189" dir="0" index="40" bw="3" slack="0"/>
+<pin id="190" dir="0" index="41" bw="13" slack="0"/>
+<pin id="191" dir="0" index="42" bw="8" slack="0"/>
+<pin id="192" dir="0" index="43" bw="8" slack="0"/>
+<pin id="193" dir="0" index="44" bw="16" slack="0"/>
+<pin id="194" dir="1" index="45" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_7/3 "/>
+</bind>
+</comp>
+
+<comp id="240" class="1004" name="grp_hlsDPI_ethernetDetection_fu_240">
+<pin_list>
+<pin id="241" dir="0" index="0" bw="0" slack="0"/>
+<pin id="242" dir="0" index="1" bw="64" slack="0"/>
+<pin id="243" dir="0" index="2" bw="8" slack="0"/>
+<pin id="244" dir="0" index="3" bw="128" slack="0"/>
+<pin id="245" dir="0" index="4" bw="1" slack="0"/>
+<pin id="246" dir="0" index="5" bw="2" slack="0"/>
+<pin id="247" dir="0" index="6" bw="64" slack="0"/>
+<pin id="248" dir="0" index="7" bw="8" slack="0"/>
+<pin id="249" dir="0" index="8" bw="128" slack="0"/>
+<pin id="250" dir="0" index="9" bw="1" slack="0"/>
+<pin id="251" dir="0" index="10" bw="16" slack="0"/>
+<pin id="252" dir="0" index="11" bw="64" slack="0"/>
+<pin id="253" dir="0" index="12" bw="8" slack="0"/>
+<pin id="254" dir="0" index="13" bw="128" slack="0"/>
+<pin id="255" dir="0" index="14" bw="1" slack="0"/>
+<pin id="256" dir="1" index="15" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="stg_5/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="195"><net_src comp="110" pin="0"/><net_sink comp="148" pin=0"/></net>
+
+<net id="196"><net_src comp="8" pin="0"/><net_sink comp="148" pin=1"/></net>
+
+<net id="197"><net_src comp="10" pin="0"/><net_sink comp="148" pin=2"/></net>
+
+<net id="198"><net_src comp="12" pin="0"/><net_sink comp="148" pin=3"/></net>
+
+<net id="199"><net_src comp="14" pin="0"/><net_sink comp="148" pin=4"/></net>
+
+<net id="200"><net_src comp="36" pin="0"/><net_sink comp="148" pin=5"/></net>
+
+<net id="201"><net_src comp="38" pin="0"/><net_sink comp="148" pin=6"/></net>
+
+<net id="202"><net_src comp="40" pin="0"/><net_sink comp="148" pin=7"/></net>
+
+<net id="203"><net_src comp="42" pin="0"/><net_sink comp="148" pin=8"/></net>
+
+<net id="204"><net_src comp="44" pin="0"/><net_sink comp="148" pin=9"/></net>
+
+<net id="205"><net_src comp="46" pin="0"/><net_sink comp="148" pin=10"/></net>
+
+<net id="206"><net_src comp="48" pin="0"/><net_sink comp="148" pin=11"/></net>
+
+<net id="207"><net_src comp="50" pin="0"/><net_sink comp="148" pin=12"/></net>
+
+<net id="208"><net_src comp="52" pin="0"/><net_sink comp="148" pin=13"/></net>
+
+<net id="209"><net_src comp="54" pin="0"/><net_sink comp="148" pin=14"/></net>
+
+<net id="210"><net_src comp="56" pin="0"/><net_sink comp="148" pin=15"/></net>
+
+<net id="211"><net_src comp="58" pin="0"/><net_sink comp="148" pin=16"/></net>
+
+<net id="212"><net_src comp="60" pin="0"/><net_sink comp="148" pin=17"/></net>
+
+<net id="213"><net_src comp="62" pin="0"/><net_sink comp="148" pin=18"/></net>
+
+<net id="214"><net_src comp="64" pin="0"/><net_sink comp="148" pin=19"/></net>
+
+<net id="215"><net_src comp="66" pin="0"/><net_sink comp="148" pin=20"/></net>
+
+<net id="216"><net_src comp="68" pin="0"/><net_sink comp="148" pin=21"/></net>
+
+<net id="217"><net_src comp="70" pin="0"/><net_sink comp="148" pin=22"/></net>
+
+<net id="218"><net_src comp="72" pin="0"/><net_sink comp="148" pin=23"/></net>
+
+<net id="219"><net_src comp="74" pin="0"/><net_sink comp="148" pin=24"/></net>
+
+<net id="220"><net_src comp="76" pin="0"/><net_sink comp="148" pin=25"/></net>
+
+<net id="221"><net_src comp="78" pin="0"/><net_sink comp="148" pin=26"/></net>
+
+<net id="222"><net_src comp="28" pin="0"/><net_sink comp="148" pin=27"/></net>
+
+<net id="223"><net_src comp="30" pin="0"/><net_sink comp="148" pin=28"/></net>
+
+<net id="224"><net_src comp="32" pin="0"/><net_sink comp="148" pin=29"/></net>
+
+<net id="225"><net_src comp="34" pin="0"/><net_sink comp="148" pin=30"/></net>
+
+<net id="226"><net_src comp="80" pin="0"/><net_sink comp="148" pin=31"/></net>
+
+<net id="227"><net_src comp="82" pin="0"/><net_sink comp="148" pin=32"/></net>
+
+<net id="228"><net_src comp="84" pin="0"/><net_sink comp="148" pin=33"/></net>
+
+<net id="229"><net_src comp="86" pin="0"/><net_sink comp="148" pin=34"/></net>
+
+<net id="230"><net_src comp="88" pin="0"/><net_sink comp="148" pin=35"/></net>
+
+<net id="231"><net_src comp="90" pin="0"/><net_sink comp="148" pin=36"/></net>
+
+<net id="232"><net_src comp="92" pin="0"/><net_sink comp="148" pin=37"/></net>
+
+<net id="233"><net_src comp="94" pin="0"/><net_sink comp="148" pin=38"/></net>
+
+<net id="234"><net_src comp="96" pin="0"/><net_sink comp="148" pin=39"/></net>
+
+<net id="235"><net_src comp="98" pin="0"/><net_sink comp="148" pin=40"/></net>
+
+<net id="236"><net_src comp="100" pin="0"/><net_sink comp="148" pin=41"/></net>
+
+<net id="237"><net_src comp="102" pin="0"/><net_sink comp="148" pin=42"/></net>
+
+<net id="238"><net_src comp="104" pin="0"/><net_sink comp="148" pin=43"/></net>
+
+<net id="239"><net_src comp="106" pin="0"/><net_sink comp="148" pin=44"/></net>
+
+<net id="257"><net_src comp="108" pin="0"/><net_sink comp="240" pin=0"/></net>
+
+<net id="258"><net_src comp="0" pin="0"/><net_sink comp="240" pin=1"/></net>
+
+<net id="259"><net_src comp="2" pin="0"/><net_sink comp="240" pin=2"/></net>
+
+<net id="260"><net_src comp="4" pin="0"/><net_sink comp="240" pin=3"/></net>
+
+<net id="261"><net_src comp="6" pin="0"/><net_sink comp="240" pin=4"/></net>
+
+<net id="262"><net_src comp="16" pin="0"/><net_sink comp="240" pin=5"/></net>
+
+<net id="263"><net_src comp="18" pin="0"/><net_sink comp="240" pin=6"/></net>
+
+<net id="264"><net_src comp="20" pin="0"/><net_sink comp="240" pin=7"/></net>
+
+<net id="265"><net_src comp="22" pin="0"/><net_sink comp="240" pin=8"/></net>
+
+<net id="266"><net_src comp="24" pin="0"/><net_sink comp="240" pin=9"/></net>
+
+<net id="267"><net_src comp="26" pin="0"/><net_sink comp="240" pin=10"/></net>
+
+<net id="268"><net_src comp="28" pin="0"/><net_sink comp="240" pin=11"/></net>
+
+<net id="269"><net_src comp="30" pin="0"/><net_sink comp="240" pin=12"/></net>
+
+<net id="270"><net_src comp="32" pin="0"/><net_sink comp="240" pin=13"/></net>
+
+<net id="271"><net_src comp="34" pin="0"/><net_sink comp="240" pin=14"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: outData_V_data_V | {4 }
+	Port: outData_V_strb_V | {4 }
+	Port: outData_V_user_V | {4 }
+	Port: outData_V_last_V | {4 }
+	Port: parser2dpi_V_data_V | {2 }
+	Port: parser2dpi_V_strb_V | {2 }
+	Port: parser2dpi_V_user_V | {2 }
+	Port: parser2dpi_V_last_V | {2 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------|---------|---------|---------|
+| Operation|           Functional Unit           |  Delay  |    FF   |   LUT   |
+|----------|-------------------------------------|---------|---------|---------|
+|   call   |        grp_hlsDPI_dpi_fu_148        |  3.142  |   482   |   233   |
+|          | grp_hlsDPI_ethernetDetection_fu_240 |    0    |   210   |    12   |
+|----------|-------------------------------------|---------|---------|---------|
+|   Total  |                                     |  3.142  |   692   |   245   |
+|----------|-------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    3   |   692  |   245  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    3   |   692  |   245  |
++-----------+--------+--------+--------+

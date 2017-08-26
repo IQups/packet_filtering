@@ -1,0 +1,147 @@
+
+
+================================================================
+== Vivado HLS Report for 'hlsDPI'
+================================================================
+* Date:           Sat Aug 26 11:22:37 2017
+
+* Version:        2015.3 (Build 1368829 on Mon Sep 28 20:31:51 PM 2015)
+* Project:        Packet_lo_pl
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     16.89|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    3|    3|    1|    1| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------+--------------------------+-----+-----+-----+-----+----------+
+        |                                     |                          |  Latency  |  Interval | Pipeline |
+        |               Instance              |          Module          | min | max | min | max |   Type   |
+        +-------------------------------------+--------------------------+-----+-----+-----+-----+----------+
+        |grp_hlsDPI_ethernetDetection_fu_240  |hlsDPI_ethernetDetection  |    1|    1|    1|    1| function |
+        |grp_hlsDPI_dpi_fu_148                |hlsDPI_dpi                |    1|    1|    1|    1| function |
+        +-------------------------------------+--------------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |       12|      -|     238|    190|
+|Instance         |        -|      -|    1081|    547|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       4|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |       12|      0|    1323|    737|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        4|      0|       1|      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+--------------------------+---------+-------+-----+-----+
+    |           Instance          |          Module          | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------------------+--------------------------+---------+-------+-----+-----+
+    |hlsDPI_dpi_U0                |hlsDPI_dpi                |        0|      0|  650|  523|
+    |hlsDPI_ethernetDetection_U0  |hlsDPI_ethernetDetection  |        0|      0|  431|   24|
+    +-----------------------------+--------------------------+---------+-------+-----+-----+
+    |Total                        |                          |        0|      0| 1081|  547|
+    +-----------------------------+--------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------------------+---------+-----+----+------+-----+---------+
+    |          Name         | BRAM_18K|  FF | LUT| Depth| Bits| Size:D*B|
+    +-----------------------+---------+-----+----+------+-----+---------+
+    |parser2dpi_V_data_V_U  |        4|   80|  55|    16|   64|     1024|
+    |parser2dpi_V_last_V_U  |        0|    7|  21|    16|    1|       16|
+    |parser2dpi_V_strb_V_U  |        0|    7|  25|    16|    8|      128|
+    |parser2dpi_V_user_V_U  |        8|  144|  89|    16|  128|     2048|
+    +-----------------------+---------+-----+----+------+-----+---------+
+    |Total                  |       12|  238| 190|    64|  201|     3216|
+    +-----------------------+---------+-----+----+------+-----+---------+
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +---------------------------------------------+---+----+-----+-----------+
+    |                     Name                    | FF| LUT| Bits| Const Bits|
+    +---------------------------------------------+---+----+-----+-----------+
+    |ap_CS                                        |  1|   0|    1|          0|
+    |ap_reg_procdone_hlsDPI_dpi_U0                |  1|   0|    1|          0|
+    |ap_reg_procdone_hlsDPI_ethernetDetection_U0  |  1|   0|    1|          0|
+    |hlsDPI_dpi_U0_ap_start                       |  1|   0|    1|          0|
+    +---------------------------------------------+---+----+-----+-----------+
+    |Total                                        |  4|   0|    4|          0|
+    +---------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+------------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++----------------+-----+-----+------------+------------------+--------------+
+|inData_TDATA    |  in |   64|    axis    |  inData_V_data_V |    pointer   |
+|inData_TSTRB    |  in |    8|    axis    |  inData_V_strb_V |    pointer   |
+|inData_TUSER    |  in |  128|    axis    |  inData_V_user_V |    pointer   |
+|inData_TLAST    |  in |    1|    axis    |  inData_V_last_V |    pointer   |
+|inData_TVALID   |  in |    1|    axis    |  inData_V_last_V |    pointer   |
+|inData_TREADY   | out |    1|    axis    |  inData_V_last_V |    pointer   |
+|outData_TDATA   | out |   64|    axis    | outData_V_data_V |    pointer   |
+|outData_TSTRB   | out |    8|    axis    | outData_V_strb_V |    pointer   |
+|outData_TUSER   | out |  128|    axis    | outData_V_user_V |    pointer   |
+|outData_TLAST   | out |    1|    axis    | outData_V_last_V |    pointer   |
+|outData_TVALID  | out |    1|    axis    | outData_V_last_V |    pointer   |
+|outData_TREADY  |  in |    1|    axis    | outData_V_last_V |    pointer   |
+|ap_clk          |  in |    1| ap_ctrl_hs |      hlsDPI      | return value |
+|ap_rst_n        |  in |    1| ap_ctrl_hs |      hlsDPI      | return value |
+|ap_done         | out |    1| ap_ctrl_hs |      hlsDPI      | return value |
+|ap_start        |  in |    1| ap_ctrl_hs |      hlsDPI      | return value |
+|ap_idle         | out |    1| ap_ctrl_hs |      hlsDPI      | return value |
+|ap_ready        | out |    1| ap_ctrl_hs |      hlsDPI      | return value |
++----------------+-----+-----+------------+------------------+--------------+
+

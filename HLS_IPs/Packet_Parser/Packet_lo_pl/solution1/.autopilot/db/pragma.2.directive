@@ -1,0 +1,27 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="hlsDPI" label="">
+<pragma name="DATAFLOW">
+<option name="interval" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hlsDPI" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="inData"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hlsDPI" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="outData"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="hlsDPI" label="">
+<pragma name="STREAM">
+<option name="variable" positionalBoolean="4" value="parser2dpi"/>
+<option name="depth" value="16"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

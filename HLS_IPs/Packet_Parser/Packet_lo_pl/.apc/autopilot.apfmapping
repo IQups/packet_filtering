@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="globals.hpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/globals.hpp"/>
+    <originFiles name="hlsDPI_IP.cpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/hlsDPI_IP.cpp"/>
+    <originFiles name="packet_filter.cpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/packet_filter.cpp"/>
+    <originFiles name="packet_filter.hpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/packet_filter.hpp"/>
+    <originFiles name="ip_handler.cpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/ip_handler.cpp"/>
+    <originFiles name="ip_handler.hpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/ip_handler.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="filter_in.dat" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/csim/filter_in.dat"/>
+    <originFiles name="filter_out.dat" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/csim/filter_out.dat"/>
+    <originFiles name="gold.dat" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/csim/gold.dat"/>
+    <originFiles name="hlsDPI_IP_tb.cpp" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/hlsDPI_IP_tb.cpp"/>
+    <originFiles name="in.dat.bak" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/csim/in.dat.bak"/>
+    <originFiles name="queryReply.dat" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/csim/queryReply.dat"/>
+    <originFiles name="queryReply.dat.bak" path="/home/iq/Documents/marketinternational_filter/HLS_IPs/Packet_Parser/Packet_lo_pl/sources/csim/queryReply.dat.bak"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

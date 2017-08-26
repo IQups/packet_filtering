@@ -1,4 +1,4 @@
-13:51:07 **** Build of project packet_redirect_bsp ****
+13:11:10 **** Auto Build of project packet_redirect_bsp ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -97,5 +97,5 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling uartps
 Finished building libraries
 
-13:51:16 Build Finished (took 9s.141ms)
+13:11:18 Build Finished (took 8s.221ms)
 

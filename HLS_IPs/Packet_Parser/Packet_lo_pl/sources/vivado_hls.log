@@ -1,0 +1,13 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version: 2013.4
+  Build date: Mon Dec 09 17:07:59 PM 2013
+  Copyright (C) 2013 Xilinx Inc. All rights reserved.
+================================================================
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@W [HLS-40] Vivado in the PATH variable is not from the same build as Vivado HLS. The mismatch may result in unexpected behaviors.
+@I [HLS-10] Running '/proj/xbuilds/2013.4_daily_latest/installs/lin64/Vivado_HLS/2013.4/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'kimonk' on host 'xir-psapcto01' (Linux_x86_64 version 2.6.18-308.el5) on Wed Mar 26 14:42:35 GMT 2014
+            in directory '/home/kimonk/appNote_140303/sources'
+@W [AP-1] Could not read script 'run_hls.tcl'.
+@I [LIC-101] Checked in feature [VIVADO_HLS]

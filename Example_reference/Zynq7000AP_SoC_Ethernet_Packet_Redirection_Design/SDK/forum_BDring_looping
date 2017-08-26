@@ -1,0 +1,48 @@
+//clear the BdTemplate
+XEmacPs_BdClear(&BdTemplate);
+
+//Create BdRing from 3 BDs
+XEmacPs_BdRingCreate();
+
+//Clone BDs from template BD
+XEmacPs_BdRingClone();
+
+//Allocate BDs
+XEmacPs_BdRingAlloc();
+
+//Configure three BDs one by one
+//First BD address
+XEmacPs_BdSetAddressRx();
+
+//Second BD
+Bd2RxPtr = XEmacPs_BdRingNext();
+XEmacPs_BdSetAddressRx();
+
+//Third BD
+Bd3RxPtr = XEmacPs_BdRingNext();
+XEmacPs_BdSetAddressRx();
+XEmacPs_BdSetLast(Bd2RxPtr);
+
+//Enqueue to HW
+XEmacPs_BdRingToHw();
+
+//Then start the device
+XEmacPs_Start();
+
+
+
+while (1) {}
+
+In the Interrupt handler funtion XEmacPsRecvHandler(); performes a following code section:
+
+NumRxBuf  = XEmacPs_BdRingFromHwRx();
+
+XEmacPs_BdClearRxNew();
+
+XEmacPs_BdRingFree();
+
+XEmacPs_BdRingAlloc();
+
+XEmacPs_BdSetAddressRx();
+
+XEmacPs_BdRingToHw();

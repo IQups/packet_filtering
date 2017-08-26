@@ -59,32 +59,10 @@ int main()
 
    
 
-   {
+
       int Status;
       
-      print("\r\n Running ScuGicSelfTestExample() for ps7_scugic_0...\r\n");
       
-      Status = ScuGicSelfTestExample(XPAR_PS7_SCUGIC_0_DEVICE_ID);
-      
-      if (Status == 0) {
-         print("ScuGicSelfTestExample PASSED\r\n");
-      }
-      else {
-         print("ScuGicSelfTestExample FAILED\r\n");
-      }
-   } 
-	
-   {
-       int Status;
-
-       Status = ScuGicInterruptSetup(&intc, XPAR_PS7_SCUGIC_0_DEVICE_ID);
-       if (Status == 0) {
-          print("ScuGic Interrupt Setup PASSED\r\n");
-       } 
-       else {
-         print("ScuGic Interrupt Setup FAILED\r\n");
-      } 
-   }
    
    {
       int Status;

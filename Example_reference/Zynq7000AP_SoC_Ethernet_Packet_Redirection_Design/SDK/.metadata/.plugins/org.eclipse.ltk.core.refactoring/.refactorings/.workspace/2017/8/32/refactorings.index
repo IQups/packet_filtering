@@ -1,2 +1,6 @@
 1502120414054	Delete 2 resources
 1502120424442	Delete resource 'raw_packet_dma_loopback'
+1502461682660	Delete resource 'phy_loopback_test/src/xscugic_tapp_example.c'
+1502461705414	Delete resource 'phy_loopback_test/src/xscutimer_intr_example.c'
+1502545512452	Delete 2 resources
+1502546175321	Delete resource 'standalone_bsp_0'

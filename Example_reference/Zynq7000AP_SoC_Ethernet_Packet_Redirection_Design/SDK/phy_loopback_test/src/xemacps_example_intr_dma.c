@@ -178,7 +178,7 @@ u32 ppu_frame_rxvd = 0;
 /*
  * Counters to be incremented by callbacks
  */
-volatile int FramesRx;		/* Frames have been received */
+volatile int FramesRx = 0;		/* Frames have been received */
 volatile int FramesTx;		/* Frames have been sent */
 volatile int DeviceErrors;	/* Number of errors detected in the device */
 
@@ -317,7 +317,13 @@ int EmacPsDmaIntrExample(XScuGic * IntcInstancePtr,
 		/* GEM1 1G clock configuration*/
 		SlcrTxClkCntrl =
 		*(volatile unsigned int *)(SLCR_GEM1_CLK_CTRL_ADDR);
-		SlcrTxClkCntrl &= EMACPS_SLCR_DIV_MASK;
+		SlcrTxClkCntrl &= kCntrl &= EMACPS_SLCR_DIV_MASK;
+		SlcrTxClkCntrl |= (XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV1 << 20);
+		SlcrTxClkCntrl |= (XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV0 << 8);
+		*(volatile unsigned int *)(SLCR_GEM1_CLK_CTRL_ADDR) =
+								SlcrTxClkCntrl;
+#endif
+	}EMACPS_SLCR_DIV_MASK;
 		SlcrTxClkCntrl |= (XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV1 << 20);
 		SlcrTxClkCntrl |= (XPAR_PS7_ETHERNET_1_ENET_SLCR_1000MBPS_DIV0 << 8);
 		*(volatile unsigned int *)(SLCR_GEM1_CLK_CTRL_ADDR) =
@@ -459,7 +465,7 @@ int EmacPsDmaIntrExample(XScuGic * IntcInstancePtr,
 	XEmacPs_SetMdioDivisor(EmacPsInstancePtr, MDC_DIV_224);
 	sleep(1);
 #endif
-	EmacPsUtilEnterLoopback(EmacPsInstancePtr, EMACPS_LOOPBACK_SPEED_1G);
+
 	XEmacPs_SetOperatingSpeed(EmacPsInstancePtr, EMACPS_LOOPBACK_SPEED_1G);
 
 	/*
@@ -470,7 +476,7 @@ int EmacPsDmaIntrExample(XScuGic * IntcInstancePtr,
 	/*
 	 * Run the EmacPs DMA Single Frame Interrupt example
 	 */
-	Status = EmacPsDmaSingleFrameIntrExample(EmacPsInstancePtr);
+	Status = EmacPsDmaSingleFrameIntrRxtoPL(EmacPsInstancePtr);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -513,7 +519,23 @@ int EmacPsDmaSingleFrameIntrExample(XEmacPs *EmacPsInstancePtr)
 	u32 NumRxBuf = 0;
 	XEmacPs_Bd *Bd1Ptr;
 	XEmacPs_Bd *Bd2Ptr;
+	XEmacPs_Bd *Bd1RxPtr;
+	XEmacPs_Bd *Bd2RxPtr;
+
 	XEmacPs_Bd *BdRxPtr;
+
+
+
+	u32 i,j;
+	u32 bd_index;
+	u32 DataError;
+	char temp_char;
+	char *rxvd_buffer_0, *rxvd_buffer_1;
+
+	//initialize rx buffer pointers
+	rxvd_buffer_0 = PACKET_BUFFER_0;
+	rxvd_buffer_1 = PACKET_BUFFER_1;
+
 
 	/*
 	 * Clear variables shared with callbacks
@@ -580,45 +602,294 @@ int EmacPsDmaSingleFrameIntrExample(XEmacPs *EmacPsInstancePtr)
 	 * The function below will allocate 2 adjacent BDs with Bd1Ptr
 	 * being set as the lead BD.
 	 */
-	Status = XEmacPs_BdRingAlloc(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
-				      2, &Bd1Ptr);
+//	Status = XEmacPs_BdRingAlloc(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+//				      2, &Bd1Ptr);
+//	if (Status != XST_SUCCESS) {
+//		EmacPsUtilErrorTrap("Error allocating TxBD");
+//		return XST_FAILURE;
+//	}
+//
+//	/*
+//	 * Setup first TxBD
+//	 */
+//	XEmacPs_BdSetAddressTx(Bd1Ptr, &TxFrame);
+//	XEmacPs_BdSetLength(Bd1Ptr, FIRST_FRAGMENT_SIZE);
+//	XEmacPs_BdClearTxUsed(Bd1Ptr);
+//	XEmacPs_BdClearLast(Bd1Ptr);
+//
+//	/*
+//	 * Setup second TxBD
+//	 */
+//	Bd2Ptr = XEmacPs_BdRingNext(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+//				      Bd1Ptr);
+//	XEmacPs_BdSetAddressTx(Bd2Ptr,
+//				 (u32) (&TxFrame) + FIRST_FRAGMENT_SIZE);
+//	XEmacPs_BdSetLength(Bd2Ptr, TxFrameLength - FIRST_FRAGMENT_SIZE);
+//	XEmacPs_BdClearTxUsed(Bd2Ptr);
+//	XEmacPs_BdSetLast(Bd2Ptr);
+//
+//	/*
+//	 * Enqueue to HW
+//	 */
+//	Status = XEmacPs_BdRingToHw(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+//				     2, Bd1Ptr);
+//	if (Status != XST_SUCCESS) {
+//		EmacPsUtilErrorTrap("Error committing TxBD to HW");
+//		return XST_FAILURE;
+//	}
+
+	/* Save the addresses in Buffer Descriptor in OCM to Block RAM in PL
+	 * Set up the Buffer Descriptor in OCM to redirect packets to PL before starting the EMAC device*/
+	for(bd_index=0;bd_index<RXBD_CNT; bd_index++)
+	{
+		if((bd_index%2) == 0)
+		{
+			//Copy Buffer address from 0x0FF0_0000 to 0x4000_0000
+			*(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+			printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
+			printf("\r\nPacket will be redirected to 0x80000000 \r\n");
+
+			//Reinitalize Buffer address at 0x0FF0_0000 to 0x8000_0000
+			*(u32*)(RX_BD_LIST_START_ADDRESS + (bd_index * 8)) = PACKET_BUFFER_0;
+
+		}
+		else
+		{
+			//Copy Buffer address from 0x0FF0_0000 to 0x4001_0000
+			*(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+			printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
+			printf("\r\nPacket will be redirected to (0x80001000)\r\n");
+
+			//Reinitalize Buffer address at 0x0FF0_0000 to 0x8000_0000
+			*(u32*)(RX_BD_LIST_START_ADDRESS + (bd_index * 8)) = PACKET_BUFFER_1;
+		}
+	}
+
+	//Status = ppu_test(EmacPsInstancePtr);
+	
+	//return 0;
+	/*
+	 * Start the device
+	 */
+	XEmacPs_Start(EmacPsInstancePtr);
+
+	/* Start transmit */
+	//XEmacPs_Transmit(EmacPsInstancePtr);
+
+	/*
+	 * Wait for transmission to complete
+	 */
+	//while (!FramesTx);
+
+	/*
+	 * Now that the frame has been sent, post process our TxBDs.
+	 * Since we have only submitted 2 to hardware, then there should
+	 * be only 2 ready for post processing.
+	 */
+//	if (XEmacPs_BdRingFromHwTx(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+//				    2, &Bd1Ptr) == 0) {
+//		EmacPsUtilErrorTrap
+//			("TxBDs were not ready for post processing");
+//		return XST_FAILURE;
+//	}
+
+	/*
+	 * Examine the TxBDs.
+	 *
+	 * There isn't much to do. The only thing to check would be DMA
+	 * exception bits. But this would also be caught in the error
+	 * handler. So we just return these BDs to the free list.
+	 */
+//	Status = XEmacPs_BdRingFree(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+//				     2, Bd1Ptr);
+//	if (Status != XST_SUCCESS) {
+//		EmacPsUtilErrorTrap("Error freeing up TxBDs");
+//		return XST_FAILURE;
+//	}
+
+	/*
+	 * Wait for Rx indication
+	 */
+	FramesRx = 0;
+
+	while(!FramesRx){};
+
+		xil_printf("FrameRx Counter .... %d",FramesRx);
+	/*
+	 * Now that the frame has been received, post process our RxBD.
+	 * Since we have submitted to hardware, then there should be only 1
+	 * ready for post processing.
+	 *
+	 *
+	 */
+	NumRxBuf = XEmacPs_BdRingFromHwRx(&(XEmacPs_GetRxRing
+					  (EmacPsInstancePtr)), 1,
+					 &BdRxPtr);
+	if (0 == NumRxBuf) {
+		EmacPsUtilErrorTrap("RxBD was not ready for post processing");
+		return XST_FAILURE;
+	}
+
+		printf("\r\n----------------------------\r\n");
+		printf("\r\nEthernet Data in PL Buffer 0\r\n");
+		printf    ("----------------------------\r\n");
+		PrintData(PACKET_BUFFER_0);
+
+		printf("\r\n----------------------------\r\n");
+		printf("\r\nEthernet Data in PL Buffer 1\r\n");
+		printf    ("----------------------------\r\n");
+		PrintData(PACKET_BUFFER_1);
+
+		printf("\r\n----------------------------\r\n");
+		printf("\r\nEthernet TX Data in PL Buffer 1\r\n");
+		printf    ("----------------------------\r\n");
+
+
+
+//	/*
+//	 * There is no device status to check. If there was a DMA error,
+//	 * it should have been reported to the error handler. Check the
+//	 * receive lengthi against the transmitted length, then verify
+//	 * the data.
+//	 */
+//	if ((XEmacPs_BdGetLength(BdRxPtr)) != TxFrameLength) {
+//		EmacPsUtilErrorTrap("Length mismatch");
+//		return XST_FAILURE;
+//	}
+//
+//	if (EmacPsUtilFrameVerify(&TxFrame, &RxFrame) != 0) {
+//		EmacPsUtilErrorTrap("Data mismatch");
+//		return XST_FAILURE;
+//	}
+
+
+	/*
+	 * Return the RxBD back to the channel for later allocation. Free
+	 * the exact number we just post processed.
+	 */
+	Status = XEmacPs_BdRingFree(&(XEmacPs_GetRxRing(EmacPsInstancePtr)),
+				     NumRxBuf, BdRxPtr);
 	if (Status != XST_SUCCESS) {
-		EmacPsUtilErrorTrap("Error allocating TxBD");
+		EmacPsUtilErrorTrap("Error freeing up RxBDs");
+		return XST_FAILURE;
+	}
+
+	Status = XEmacPs_BdRingAlloc(&
+				      (XEmacPs_GetRxRing(EmacPsInstancePtr)),
+				      1, &BdRxPtr);
+	if (Status != XST_SUCCESS) {
+		EmacPsUtilErrorTrap("Error allocating RxBD");
 		return XST_FAILURE;
 	}
 
 	/*
-	 * Setup first TxBD
+	 * Setup the BD. The XEmacPs_BdRingClone() call will mark the
+	 * "wrap" field for last RxBD. Setup buffer address to associated
+	 * BD.
 	 */
-	XEmacPs_BdSetAddressTx(Bd1Ptr, &TxFrame);
-	XEmacPs_BdSetLength(Bd1Ptr, FIRST_FRAGMENT_SIZE);
-	XEmacPs_BdClearTxUsed(Bd1Ptr);
-	XEmacPs_BdClearLast(Bd1Ptr);
 
-	/*
-	 * Setup second TxBD
-	 */
-	Bd2Ptr = XEmacPs_BdRingNext(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
-				      Bd1Ptr);
-	XEmacPs_BdSetAddressTx(Bd2Ptr,
-				 (u32) (&TxFrame) + FIRST_FRAGMENT_SIZE);
-	XEmacPs_BdSetLength(Bd2Ptr, TxFrameLength - FIRST_FRAGMENT_SIZE);
-	XEmacPs_BdClearTxUsed(Bd2Ptr);
-	XEmacPs_BdSetLast(Bd2Ptr);
+	XEmacPs_BdSetAddressRx(BdRxPtr, &RxFrame);
 
 	/*
 	 * Enqueue to HW
 	 */
-	Status = XEmacPs_BdRingToHw(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
-				     2, Bd1Ptr);
+	Status = XEmacPs_BdRingToHw(&(XEmacPs_GetRxRing(EmacPsInstancePtr)),
+				     1, BdRxPtr);
 	if (Status != XST_SUCCESS) {
-		EmacPsUtilErrorTrap("Error committing TxBD to HW");
+		EmacPsUtilErrorTrap("Error committing RxBD to HW");
+		return XST_FAILURE;
+	   }
+	//FramesRx=0;
+	xil_printf("FrameRx Counter .... %d",FramesRx);
+
+	//}
+	/*
+	 * Finished this example. If everything worked correctly, all TxBDs
+	 * and RxBDs should be free for allocation. Stop the device.
+	 */
+	XEmacPs_Stop(EmacPsInstancePtr);
+
+	return XST_SUCCESS;
+}
+
+
+
+
+/**
+*
+* This function demonstrates the usage of the EMACPS by sending and
+* receiving a single frame in DMA interrupt mode.
+* The source packet will be described by two descriptors. It will be
+* received into a buffer described by a single descriptor.
+*
+* @param	EmacPsInstancePtr is a pointer to the instance of the EmacPs
+*		driver.
+*
+* @return	XST_SUCCESS to indicate success, otherwise XST_FAILURE.
+*
+* @note		None.
+*
+*****************************************************************************/
+int EmacPsDmaSingleFrameIntrRxtoPL(XEmacPs *EmacPsInstancePtr)
+{
+	int Status;
+	u32 TxFrameLength;
+	u32 PayloadSize = 1000;
+	u32 NumRxBuf = 0;
+	XEmacPs_Bd *Bd1Ptr;
+	XEmacPs_Bd *Bd2Ptr;
+	XEmacPs_Bd *BdRxPtr;
+	u8 MacSave[6] = { 0x00, 0x0a, 0x35, 0x01, 0x02, 0x03 };
+
+	/*
+	 * Clear variables shared with callbacks
+	 */
+	FramesRx = 0;
+	FramesTx = 0;
+	DeviceErrors = 0;
+
+
+	Status = XEmacPs_SetMacAddress(EmacPsInstancePtr, &MacSave, 1);
+
+	/*
+	 * Clear out receive packet memory area
+	 */
+	EmacPsUtilFrameMemClear(&RxFrame);
+
+	//Xil_DCacheInvalidateRange((u32)&RxFrame, TxFrameLength);
+	/*
+	 * Allocate RxBDs since we do not know how many BDs will be used
+	 * in advance, use RXBD_CNT here.
+	 */
+	Status = XEmacPs_BdRingAlloc(&
+				      (XEmacPs_GetRxRing(EmacPsInstancePtr)),
+				      1, &BdRxPtr);
+	if (Status != XST_SUCCESS) {
+		EmacPsUtilErrorTrap("Error allocating RxBD");
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Setup the BD. The XEmacPs_BdRingClone() call will mark the
+	 * "wrap" field for last RxBD. Setup buffer address to associated
+	 * BD.
+	 */
+
+	XEmacPs_BdSetAddressRx(BdRxPtr, &RxFrame);
+
+	/*
+	 * Enqueue to HW
+	 */
+	Status = XEmacPs_BdRingToHw(&(XEmacPs_GetRxRing(EmacPsInstancePtr)),
+				     1, BdRxPtr);
+	if (Status != XST_SUCCESS) {
+		EmacPsUtilErrorTrap("Error committing RxBD to HW");
 		return XST_FAILURE;
 	}
 
 
-	Status = ppu_test(EmacPsInstancePtr);
-	
+
+	Status = ppu_rx_test(EmacPsInstancePtr);
 	return 0;
 	/*
 	 * Start the device
@@ -626,12 +897,12 @@ int EmacPsDmaSingleFrameIntrExample(XEmacPs *EmacPsInstancePtr)
 	XEmacPs_Start(EmacPsInstancePtr);
 
 	/* Start transmit */
-	XEmacPs_Transmit(EmacPsInstancePtr);
+	//XEmacPs_Transmit(EmacPsInstancePtr);
 
 	/*
 	 * Wait for transmission to complete
 	 */
-	while (!FramesTx);
+	//while (!FramesTx);
 
 	/*
 	 * Now that the frame has been sent, post process our TxBDs.
@@ -713,7 +984,6 @@ int EmacPsDmaSingleFrameIntrExample(XEmacPs *EmacPsInstancePtr)
 	return XST_SUCCESS;
 }
 
-
 /****************************************************************************/
 /**
 * This function resets the device but preserves the options set by the user.
@@ -736,9 +1006,10 @@ int EmacPsDmaSingleFrameIntrExample(XEmacPs *EmacPsInstancePtr)
 static int EmacPsResetDevice(XEmacPs * EmacPsInstancePtr)
 {
 	int Status = 0;
-	u8 MacSave[6];
+	u8 MacSave[6] = { 0x00, 0x0a, 0x35, 0x01, 0x02, 0x03 };
 	u32 Options;
 	XEmacPs_Bd BdTemplate;
+
 
 	/*
 	 * Stop device
@@ -1018,6 +1289,7 @@ static void XEmacPsSendHandler(void *Callback)
 *****************************************************************************/
 static void XEmacPsRecvHandler(void *Callback)
 {
+	u32 NumRxBuf =0;
 	XEmacPs *EmacPsInstancePtr = (XEmacPs *) Callback;
 
 	/*
@@ -1029,6 +1301,7 @@ static void XEmacPsRecvHandler(void *Callback)
 	 * Increment the counter so that main thread knows something
 	 * happened.
 	 */
+	xil_printf("Intr FrameRx Counter .... %d",FramesRx);
 	FramesRx++;
 }
 
@@ -1177,10 +1450,12 @@ void ppu_test(XEmacPs *EmacPsInstancePtr)
 	/* Start transmit */
 	XEmacPs_Transmit(EmacPsInstancePtr);
 
-	for(i=0;i<10000;i++)
+	for(i=0;i<100;i++)
 	{
+		printf("Tx check   %2x   ", TxBuffer[0][i]);
 		for(j=0;j<100;j++)
 		{
+
 		}
 	}
 
@@ -1190,20 +1465,109 @@ void ppu_test(XEmacPs *EmacPsInstancePtr)
 	printf("\r\n-------------------------------------------------------\r\n");
 
 	//compare Tx to Rx
-	DataError = ReceiveDataVerify(&TxBuffer[0], PACKET_BUFFER_0, 1018);
-	DataError += ReceiveDataVerify(&TxBuffer[1], PACKET_BUFFER_1, 1018);
+//	DataError = ReceiveDataVerify(&TxBuffer[0], PACKET_BUFFER_0, 1018);
+//	DataError += ReceiveDataVerify(&TxBuffer[1], PACKET_BUFFER_1, 1018);
+//
+//	if (DataError != 0)
+//	{
+//		printf("PPU Test : FAILED\r\n");
+//		printf("Data mismatch\r\n");
+//		printf("Error Count = %d", DataError);
+//	}
+//	else
+//	{
+//		printf("PPU Test : PASSED\r\n");
+//		printf("Data OK\r\n");
+//	}
 
-	if (DataError != 0)
+	printf("\r\n----------------------------\r\n");
+	printf("\r\nEthernet Data in PL Buffer 0\r\n");
+	printf    ("----------------------------\r\n");
+	PrintData(PACKET_BUFFER_0);
+
+	printf("\r\n----------------------------\r\n");
+	printf("\r\nEthernet Data in PL Buffer 1\r\n");
+	printf    ("----------------------------\r\n");
+	PrintData(PACKET_BUFFER_1);
+
+	printf("\r\n----------------------------\r\n");
+	printf("\r\nEthernet TX Data in PL Buffer 1\r\n");
+	printf    ("----------------------------\r\n");
+	//PrintData(&TxBuffer[0]);
+
+
+	printf("\r\n----------------\r\n");
+	printf("PPU Test Finished\r\n");
+	printf("\r\n----------------\r\n");
+
+}
+
+
+
+void ppu_rx_test(XEmacPs *EmacPsInstancePtr)
+{
+	u32 i,j;
+	u32 bd_index;
+	u32 DataError;
+	char temp_char;
+	char *rxvd_buffer_0, *rxvd_buffer_1;
+
+	//initialize rx buffer pointers
+	rxvd_buffer_0 = PACKET_BUFFER_0;
+	rxvd_buffer_1 = PACKET_BUFFER_1;
+
+
+	//clear rx buffers
+	for(i=0;i<1600;i++)
 	{
-		printf("PPU Test : FAILED\r\n");
-		printf("Data mismatch\r\n");
-		printf("Error Count = %d", DataError);
+			*rxvd_buffer_0++ = 0x00;
+			*rxvd_buffer_1++ = 0x00;
 	}
-	else
+
+
+	/* Save the addresses in Buffer Descriptor in OCM to Block RAM in PL
+	 * Set up the Buffer Descriptor in OCM to redirect packets to PL before starting the EMAC device*/
+	for(bd_index=0;bd_index<RXBD_CNT; bd_index++)
 	{
-		printf("PPU Test : PASSED\r\n");
-		printf("Data OK\r\n");
+		if((bd_index%2) == 0)
+		{
+			//Copy Buffer address from 0x0FF0_0000 to 0x4000_0000
+			*(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+			printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL \r\n", bd_index, &RxBuffer[bd_index][0]);
+			printf("\r\nPacket will be redirected to 0x80000000 \r\n");
+
+			//Reinitalize Buffer address at 0x0FF0_0000 to 0x8000_0000
+			*(u32*)(RX_BD_LIST_START_ADDRESS + (bd_index * 8)) = PACKET_BUFFER_0;
+
+		}
+		else
+		{
+			//Copy Buffer address from 0x0FF0_0000 to 0x4001_0000
+			*(u32*)(BUFFER_DESC_MEM + (bd_index * 8) ) = &RxBuffer[bd_index][0];
+			printf("\r\nRxBuffer Addr in BD%d: %8x is saved in PL\r\n", bd_index, &RxBuffer[bd_index][0]);
+			printf("\r\nPacket will be redirected to (0x80001000)\r\n");
+
+			//Reinitalize Buffer address at 0x0FF0_0000 to 0x8000_0000
+			*(u32*)(RX_BD_LIST_START_ADDRESS + (bd_index * 8)) = PACKET_BUFFER_1;
+		}
 	}
+
+	/*
+	 * Start the device
+	 */
+	XEmacPs_Start(EmacPsInstancePtr);
+
+	/*
+	 * Wait for Rx indication
+	 */
+	while (!FramesRx);
+
+
+	//verifying the TX and RX Buffer
+	printf("\r\n-------------------------------------------------------\r\n");
+	printf("\r\nComparing Transmit Packet with PL Buffer data \r\n");
+	printf("\r\n-------------------------------------------------------\r\n");
+
 
 	printf("\r\n----------------------------\r\n");
 	printf("\r\nEthernet Data in PL Buffer 0\r\n");
@@ -1216,19 +1580,18 @@ void ppu_test(XEmacPs *EmacPsInstancePtr)
 	PrintData(PACKET_BUFFER_1);
 
 
-
 	printf("\r\n----------------\r\n");
 	printf("PPU Test Finished\r\n");
 	printf("\r\n----------------\r\n");
+	while (1);
 
 }
-
 
 void PrintData(char *data_ptr)
 {
 	u32 i;
 	char temp_char;
-	for(i=0;i<1018;i++)
+	for(i=0;i<68;i++)
 	{
 		temp_char = *data_ptr++;
 		if(i%8 ==0)
@@ -1248,6 +1611,7 @@ int ReceiveDataVerify(char* Tx, char* Rx, u32 count)
 
 	for(i=0;i<count;i++)
 	{
+		printf("TX %2x  , RX  %2x \n", *Tx,*Rx);
 		if( *Tx != *Rx)
 		{
 			error++;
